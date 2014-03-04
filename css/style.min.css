@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "agencyfb";
+    src: url(../fonts/01182_AgencyFB.ttf) format("truetype");
+}
+
+#support-window {
+	z-index: 100;
+	border-color: #696869;
+	border-width: 1px;
+	border-style: solid;
+	position: fixed;
+	width: 460px;
+	height: 320px;
+	left: 100%;
+	top: 50%;
+	margin-top: -180px;
+	margin-left: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0 1px 12px #5b5b5b;
+	-webkit-box-shadow: 0 1px 12px #5b5b5b;
+	-moz-box-shadow: 0 1px 12px #5b5b5b;
+}
+#help-window-title {
+	line-height: 38px;
+	text-shadow: 0 1px white;
+	color:white;
+	font-size: 30px;
+	text-align:center;
+	font-family:agencyfb, "Comic Sans MS", cursive, Helvetica, Verdana, Arial, sans-serif;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	position: absolute;
+	width: 445px;
+	height: 38px;
+	top: 0;
+	left: 0;
+	padding-left: 15px;
+	background:black;
+	opacity:0.8;
+}
+
+#main-help {
+	border-top-color: #959395;
+	border-top-width: 1px;
+	border-top-style: solid;
+	position: absolute;
+	width: 100%;
+	height: 280px;
+	top: 39px;
+	left: 0;
+	background:black;
+	opacity:0.8;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px
+}
+#main-help ul{
+	list-style:none;
+}
+#main-help li a{
+	font-size:25px;
+	font-family:agencyfb, "Comic Sans MS", cursive;
+	text-decoration:none;
+	color:white;
+}
+#help-label {
+	position: absolute;
+	width: 40px;
+	height: 155px;
+	left: -60px;
+	top: 80px;
+	background:url(../img/credits/label.png) no-repeat;
+	opacity:0.65;
+	color:white;
+	font-family:"Comic Sans MS", cursive;
+	font-size:15px;
+	font-weight:700;
+	margin-left:10px;
+	background-position: 10px 0;
+	cursor: pointer;
+}
+#help-label:hover {
+	background-position: 8px 0
+}
+#help-label:active {
+	background-position: -58px 0
+}
+#close-help {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	right: 7px;
+	top: 5px;
+	background:url(../img/cross.png) no-repeat;
+	background-position: 0 0;
+}

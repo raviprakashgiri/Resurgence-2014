@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//Citrix Online//GoToWebinar//EN
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20140118T090604Z
+DTSTART;TZID=Asia/Kolkata:20140119T170000
+DTEND;TZID=Asia/Kolkata:20140119T220000
+SUMMARY:GoToWebinar - MICA Admissions Webinar 2014
+LOCATION:GoToWebinar - See conference call information below
+UID:-2007074163@citrixonline.com
+ORGANIZER:vaneet@micamail.in
+DESCRIPTION:1. Click and join at the specified time and date:\nhttps://gl
+ obal.gotowebinar.com/join/8499187854927387138/992481033\nNote: This link
+  should not be shared with others\; it is unique to you.\n\n2. Choose on
+ e of the following audio options:\n\nTO USE YOUR COMPUTER'S AUDIO:\nWhen
+  the Webinar begins\, you will be connected to audio using your computer
+ 's microphone and speakers (VoIP). A headset is recommended.\n\n-- OR --
+ \n\nTO USE YOUR TELEPHONE:\nIf you prefer to use your phone\, you must s
+ elect "Use Telephone" after joining the webinar and call in using the nu
+ mbers below.\n\nUnited States\nLong Distance: +1 (702) 489-0003\n	Access
+  Code: 476-139-467\n	Audio PIN: Shown after joining the webinar\n\n
+X-ALT-DESC;FMTTYPE=text/html:<HTML><HEAD><TITLE></TITLE><BODY><FONT SIZE=
+ 2><b>1. Click and join at the specified time and date:</b></FONT><BR><FO
+ NT SIZE=2>https://global.gotowebinar.com/join/8499187854927387138/992481
+ 033</FONT><BR><FONT SIZE=2>Note: This link should not be shared with oth
+ ers\; it is unique to you.</FONT><BR><BR><FONT SIZE=2><FONT SIZE=2><b>2.
+  Choose one of the following audio options:</b></FONT><BR><BR><FONT SIZE
+ =2>TO USE YOUR COMPUTER'S AUDIO:</FONT><BR><FONT SIZE=2>When the Webinar
+  begins\, you will be connected to audio using your computer's microphon
+ e and speakers (VoIP). A headset is recommended.</FONT><BR><BR><FONT SIZ
+ E=2>-- OR --</FONT><BR><BR><FONT SIZE=2>TO USE YOUR TELEPHONE:</FONT><BR
+ ><FONT SIZE=2>If you prefer to use your phone\, you must select "Use Tel
+ ephone" after joining the webinar and call in using the numbers below.</
+ FONT><BR><BR><FONT SIZE=2>United States</FONT><BR><FONT SIZE=2>Long Dist
+ ance: +1 (702) 489-0003</FONT><BR><FONT SIZE=2>&nbsp\;&nbsp\;&nbsp\;&nbs
+ p\;</FONT><FONT SIZE=2>Access Code: 476-139-467</FONT><BR><FONT SIZE=2>&
+ nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><FONT SIZE=2>Audio PIN: Shown after jo
+ ining the webinar</FONT><BR></BODY></HTML></FONT><BR></BODY></HTML>
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
