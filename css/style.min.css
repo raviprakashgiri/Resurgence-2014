@@ -24,11 +24,11 @@
 }
 #help-window-title {
 	line-height: 38px;
-	text-shadow: 0 1px white;
-	color:white;
-	font-size: 30px;
+	text-shadow: 0 1px #FFB40F;
+	color:#FFB40F;
+	font-size: 17px;
 	text-align:center;
-	font-family:agencyfb, "Comic Sans MS", cursive, Helvetica, Verdana, Arial, sans-serif;
+	font-family: "game_of_thrones", "Comic Sans MS", cursive, Helvetica, Verdana, Arial, sans-serif;
 	border-bottom-style: solid;
 	border-bottom-color: white;
 	border-bottom-width: 1px;

@@ -10,7 +10,7 @@
                         .stop(true)
                         .animate({
                             'width': '100%',
-                            'height': '170px',
+                            'height': '190px',
                             'left': '0px'
                         }, 300, 'linear')
                         .andSelf()
@@ -23,9 +23,9 @@
                         .animate({'height': '240px'}, 300, 'easeOutBack', function () {
                             /*var $sub_menu = $elem.find('.box');
                              if($sub_menu.length){
-                             var left = '170px';
+                             var left = '190px';
                              if($elem.parent().children().length == $elem.index()+1)
-                             left = '-170px';
+                             left = '-190px';
                              $sub_menu.show().animate({'left':left},200);
                              }*/
                         });
@@ -47,7 +47,7 @@
                             .andSelf()
                             .find('.wrap')
                             .stop(true)
-                            .animate({'top': '25px'}, 500);
+                            .animate({'top': '9px'}, 500);
 //                    }).bind('click', function () {
 //                        var $elem = $(this);
 //
@@ -86,7 +86,7 @@
 
                 $("#menu > li").each(function(i){
                     $(this).find(".wrap").animate({
-                        "top":"25px"
+                        "top":"9px"
                     },320*(i+1),'easeInBack')
                 });
             }
