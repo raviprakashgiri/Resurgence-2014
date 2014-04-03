@@ -33,7 +33,24 @@ slidehtml, body {
     background-color: slategray;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+/*vid{
+    overflow:hidden;
+    height: 768px;
+    width: 1366px;
+    margin-left:0px;
+    margin-top: 0px;
+    top:0px;
+    bottom:768px;
+    
+}
+video{
+    image-fit: fill;
+}
+*/
+>>>>>>> master
 #ananta > a:hover {
    /* background-color: slategray;*/
    background-color: firebrick;
@@ -412,37 +429,61 @@ ul.menu li span span.descr {
 }
 
 #yt{
+<<<<<<< HEAD
     background:url("../img/shareicons/y1.png") #CFB538;
+=======
+    background:url("../img/shareicons/y1.png") white;
+>>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #yt:hover{
+<<<<<<< HEAD
     background:url("../img/shareicons/y2.png") #CFB538;
+=======
+    background:url("../img/shareicons/y2.png") white;
+>>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb{
+<<<<<<< HEAD
     background:url("../img/shareicons/fb1.png") #CFB538;
+=======
+    background:url("../img/shareicons/fb1.png") white;
+>>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb:hover{
+<<<<<<< HEAD
     background:url("../img/shareicons/fb2.png") #CFB538;
+=======
+    background:url("../img/shareicons/fb2.png") white;
+>>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp{
+<<<<<<< HEAD
     background:url("../img/shareicons/g2.png") #CFB538;
+=======
+    background:url("../img/shareicons/g2.png") white;
+>>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp:hover{
+<<<<<<< HEAD
     background:url("../img/shareicons/g1.png") #CFB538;
+=======
+    background:url("../img/shareicons/g1.png") white;
+>>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;

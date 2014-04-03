@@ -15,7 +15,11 @@ window.onhashchange = function(){
 	if(which[1]){
 		b = which[1];
 		if((!events.current||!events.currentEvent)||(events.current!=a||events.currentEvent!=b)){
+<<<<<<< HEAD
 			$("#events .img")[0].src='';
+=======
+			$("#events .img")[0].src=null;
+>>>>>>> master
 			$("#events .abst").html('');
 			$("#events .title").html('');
 			console.log(211);

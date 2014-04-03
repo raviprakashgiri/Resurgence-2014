@@ -1,0 +1,209 @@
+@import url("reset.css");
+
+/* layout */
+
+body {
+	background:#191919;
+	font-family:'PT Sans Narrow', Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	line-height:18px;
+}
+
+#portfolio {
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:1;
+	width:1000px;
+	height:520px;
+	margin:-250px 0 0 -500px;
+}
+
+#background {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	background:url(../images/bg.png) no-repeat center;
+}
+
+#portfolio .gallery,
+#portfolio .gallery .inside {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#portfolio .gallery {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+#portfolio .gallery .inside {
+	z-index:1;
+}
+
+#portfolio .arrows a {
+	position:absolute;
+	z-index:3;
+	width:32px;
+	height:32px;
+	background-image:url(../images/arrows.png);
+	background-repeat:no-repeat;
+	outline:none;
+	text-indent:-9999px;
+}
+
+#portfolio .arrows .prev,
+#portfolio .arrows .up {
+	display:none;
+}
+
+#portfolio .arrows .up,
+#portfolio .arrows .down {
+	left:50%;
+	margin-left:-16px;
+}
+
+#portfolio .arrows .prev,
+#portfolio .arrows .next {
+	top:180px;
+}
+
+#portfolio .arrows .up {
+	background-position:0 -64px;
+	top:20px;
+}
+
+#portfolio .arrows .down {
+	background-position:0 -96px;
+	bottom:120px;
+}
+
+#portfolio .arrows .prev {
+	background-position:0 -32px;
+	left:60px;
+}
+
+#portfolio .arrows .next {
+	background-position:0 0;
+	right:60px;
+}
+
+#portfolio .arrows .up:hover {
+	background-position:-32px -64px;
+}
+
+#portfolio .arrows .down:hover {
+	background-position:-32px -96px;
+}
+
+#portfolio .arrows .next:hover {
+	background-position:-32px 0;
+}
+
+#portfolio .arrows .prev:hover {
+	background-position:-32px -32px;
+}
+
+
+#portfolio .item {
+	position:absolute;
+	top:0;
+	width:1000px;
+	height:530px;
+}
+
+#portfolio .item div {
+	position:absolute;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#portfolio .item div img {
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-300px;
+}
+
+#portfolio .paths {
+	position:absolute;
+	bottom:60px;
+	left:50%;
+	margin-left:-30px;
+	z-index:4;
+}
+
+#portfolio .paths div {
+	position:absolute;
+	top:0;
+}
+
+#portfolio .paths a {
+	background:#333;
+	display:block;
+	position:absolute;
+	left:0;
+	outline:none;
+}
+
+#portfolio .paths a:hover,
+#portfolio .paths .active {
+	background:#fff;
+}
+
+/* anchors */
+
+a {
+	text-decoration:none;
+	color:#fff;
+}
+/* heading */
+h1{
+	font-size:22px;
+	text-shadow:1px 1px 1px #000;
+	position:relative;
+	z-index:1000;
+	color:#fff;
+	font-weight:normal;
+	padding:10px;
+	margin-top:10px;
+	text-transform:uppercase;
+	background:#000;
+	float:left;
+}
+
+/* header */
+#header{
+	height:25px;
+	line-height:24px;
+	font-size:12px;
+	background:#000;
+	opacity:0.9;
+	text-transform:uppercase;
+	z-index:999;
+	position:relative;
+}
+#header a{
+	padding:5px 10px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	color:#ddd;
+	text-align:right;
+}
+#header a:hover{
+	color:#fff;
+}
+#header a span{
+	font-weight:bold;
+}
+#header span.right_ab{
+	position:absolute;
+	right:4px;
+}
