@@ -33,24 +33,7 @@ slidehtml, body {
     background-color: slategray;
     font-weight: bold;
 }
-<<<<<<< HEAD
 
-=======
-/*vid{
-    overflow:hidden;
-    height: 768px;
-    width: 1366px;
-    margin-left:0px;
-    margin-top: 0px;
-    top:0px;
-    bottom:768px;
-    
-}
-video{
-    image-fit: fill;
-}
-*/
->>>>>>> master
 #ananta > a:hover {
    /* background-color: slategray;*/
    background-color: firebrick;
@@ -429,61 +412,37 @@ ul.menu li span span.descr {
 }
 
 #yt{
-<<<<<<< HEAD
     background:url("../img/shareicons/y1.png") #CFB538;
-=======
-    background:url("../img/shareicons/y1.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #yt:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/y2.png") #CFB538;
-=======
-    background:url("../img/shareicons/y2.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb{
-<<<<<<< HEAD
     background:url("../img/shareicons/fb1.png") #CFB538;
-=======
-    background:url("../img/shareicons/fb1.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/fb2.png") #CFB538;
-=======
-    background:url("../img/shareicons/fb2.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp{
-<<<<<<< HEAD
     background:url("../img/shareicons/g2.png") #CFB538;
-=======
-    background:url("../img/shareicons/g2.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/g1.png") #CFB538;
-=======
-    background:url("../img/shareicons/g1.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
@@ -502,7 +461,7 @@ ul.menu li span span.descr {
 */
 
 /* popup */
-#popupAbout, #popupContact, #popupEvents {
+#popupAbout, #popuptoday, #popupEvents {
     height: 450px;
     width: 900px;
     overflow: auto;
@@ -569,18 +528,18 @@ ul.menu li span span.descr {
 }
 
 
-#popupAbout p, #popupContact p,#popupEvents p, #popupCS p {
+#popupAbout p, #popuptoday p,#popupEvents p, #popupCS p {
     padding-left: 10px;
     font-size: 16px;
     line-height: 24px;
 }
 
-#popupAbout p font, #popupContact span,font, #popupEvents p 
+#popupAbout p font, #popuptoday span,font, #popupEvents p 
 font, #popupCS p font {
     color:#FFB40F;
 }
 
-#popupAbout h1, #popupContact h1,#popupEvents h1, #popupCS 
+#popupAbout h1, #popuptoday h1,#popupEvents h1, #popupCS 
 h1 {
     text-align: left;
     font-family:game_of_thrones;
@@ -590,7 +549,7 @@ h1 {
     padding-bottom: 2px;
     margin: 0;
 }
-#popupAboutClose, #popupContactClose, #popupEventsClose, 
+#popupAboutClose, #popuptodayClose, #popupEventsClose, 
 #popupCSClose {
     right: 0;
     top: 15px;
@@ -604,23 +563,46 @@ h1 {
     transition:all .25s linear;
 }
 
-#popupArchivesClose{
-    bottom: 62px;
-    left: 672px;
+
+/*#popupArchivesClose:hover{
+    background-image: url(../img/enter.png);
+    bottom: 24px;hivesclose
+    left: 655px;
     position: absolute;
     display: block;
-    width: 45px;
-    height: 25px;
+    width: 61px;
+    height: 29px;
     border: 1px solid black;
     opacity: 0.5;
+    z-index: 1;
     -webkit-transition:all .25s linear;
     -moz-transition:all .25s linear;
     -o-transition:all .25s linear;
     -ms-transition:all .25s linear;
     transition:all .25s linear;
 }
+*/
 
-#popupAboutClose:hover, #popupContactClose:hover, #popupArchivesClose:hover, 
+#popupArchivesClose{
+    width:66px; height:31px;
+     bottom: 24px;
+    left: 655px;
+    position: absolute;
+     z-index: 1;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+    display: block;
+    
+    background-repeat: no-repeat;
+    background-image: url('../img/enter_down.png');}
+
+#bc_block:hover ~ #popupArchivesClose {background-image: url('../img/enter.png'); cursor:pointer;}
+ #popupArchivesClose:hover {cursor:pointer;}
+
+#popupAboutClose:hover, #popuptodayClose:hover, 
 #popupEventsClose:hover, #popupCSClose:hover {
     opacity: 1;
     -webkit-transition:all .25s linear;
@@ -658,7 +640,7 @@ h1 {
     text-shadow: 0 0 5px blue;
 }
 
-#popupContact table {
+#popuptoday table {
     width: 60%;
     margin: 0 auto;
     text-align: center;
@@ -666,7 +648,7 @@ h1 {
     border-spacing: 10px;
 }
 
-#popupContact table  td{
+#popuptoday table  td{
     margin: 10px;
     box-shadow: 0px 0px 45px rgba(255, 255, 255, 0.5) inset;
     border-radius: 5%;
@@ -712,11 +694,11 @@ h1 {
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 48s linear infinite 0s;
-    -moz-animation: imageAnimation 48s linear infinite 0s;
-    -o-animation: imageAnimation 48s linear infinite 0s;
-    -ms-animation: imageAnimation 48s linear infinite 0s;
-    animation: imageAnimation 48s linear infinite 0s;
+    -webkit-animation: imageAnimation 44s linear infinite 0s;
+    -moz-animation: imageAnimation 44s linear infinite 0s;
+    -o-animation: imageAnimation 44s linear infinite 0s;
+    -ms-animation: imageAnimation 44s linear infinite 0s;
+    animation: imageAnimation 44s linear infinite 0s;
 }
 
 ul.menu li:hover ~ body {
@@ -839,11 +821,11 @@ ul.menu li:hover ~ body {
     text-align: right;
     opacity: 0;
     color: #FFB40F;
-    -webkit-animation: titleAnimation 48s linear infinite 0s;
-    -moz-animation: titleAnimation 48s linear infinite 0s;
-    -o-animation: titleAnimation 48s linear infinite 0s;
-    -ms-animation: titleAnimation 48s linear infinite 0s;
-    animation: titleAnimation 48s linear infinite 0s;
+    -webkit-animation: titleAnimation 44s linear infinite 0s;
+    -moz-animation: titleAnimation 44s linear infinite 0s;
+    -o-animation: titleAnimation 44s linear infinite 0s;
+    -ms-animation: titleAnimation 44s linear infinite 0s;
+    animation: titleAnimation 44s linear infinite 0s;
 }
 
 .cb-slideshow li div h3 {
@@ -866,66 +848,66 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../img/gallery/3.jpg);
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
+   background-image: url(../img/gallery/2.jpg);
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../img/gallery/2.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s;
+    background-image: url(../img/gallery/3.jpg);
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(../img/gallery/3.jpg);
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
+    background-image: url(../img/gallery/4.jpg);
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s;
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../img/gallery/4.jpg);
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s;
+    background-image: url(../img/gallery/5.jpg);
+    -webkit-animation-delay: 22s;
+    -moz-animation-delay: 22s;
+    -o-animation-delay: 22s;
+    -ms-animation-delay: 22s;
+    animation-delay: 22s;
 }
 
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(../img/gallery/5.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
+    background-image: url(../img/gallery/6.jpg);
+    -webkit-animation-delay: 33s;
+    -moz-animation-delay: 33s;
+    -o-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s;
 }
 
 .cb-slideshow li:nth-child(7) span {
-    background-image: url(../img/gallery/6.jpg);
-    -webkit-animation-delay: 36s;
-    -moz-animation-delay: 36s;
-    -o-animation-delay: 36s;
-    -ms-animation-delay: 36s;
-    animation-delay: 36s;
+    background-image: url(../img/gallery/7.jpg);
+    -webkit-animation-delay: 37s;
+    -moz-animation-delay: 37s;
+    -o-animation-delay: 37s;
+    -ms-animation-delay: 37s;
+    animation-delay: 37s;
 }
 
 .cb-slideshow li:nth-child(8) span {
     background-image: url(../img/gallery/7.jpg);
-    -webkit-animation-delay: 42s;
-    -moz-animation-delay: 42s;
-    -o-animation-delay: 42s;
-    -ms-animation-delay: 42s;
-    animation-delay: 42s;
+    -webkit-animation-delay: 41s;
+    -moz-animation-delay: 41s;
+    -o-animation-delay: 41s;
+    -ms-animation-delay: 41s;
+    animation-delay: 41s;
 }
 
 .cb-slideshow li:nth-child(1) div {
@@ -933,59 +915,59 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(2) div {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 .cb-slideshow li:nth-child(3) div {
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
 }
 
 .cb-slideshow li:nth-child(4) div {
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s;
 }
 
 .cb-slideshow li:nth-child(5) div {
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s;
+    -webkit-animation-delay: 22s;
+    -moz-animation-delay: 22s;
+    -o-animation-delay: 22s;
+    -ms-animation-delay: 22s;
+    animation-delay: 22s;
 }
 
 .cb-slideshow li:nth-child(6) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
+    -webkit-animation-delay: 33s;
+    -moz-animation-delay: 33s;
+    -o-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s;
 }
 
 .cb-slideshow li:nth-child(7) div {
-    -webkit-animation-delay: 36s;
-    -moz-animation-delay: 36s;
-    -o-animation-delay: 36s;
-    -ms-animation-delay: 36s;
-    animation-delay: 36s;
+    -webkit-animation-delay: 37s;
+    -moz-animation-delay: 37s;
+    -o-animation-delay: 37s;
+    -ms-animation-delay: 37s;
+    animation-delay: 37s;
 }
 
 .cb-slideshow li:nth-child(8) div {
-    -webkit-animation-delay: 42s;
-    -moz-animation-delay: 42s;
-    -o-animation-delay: 42s;
-    -ms-animation-delay: 42s;
-    animation-delay: 42s;
+    -webkit-animation-delay: 41s;
+    -moz-animation-delay: 41s;
+    -o-animation-delay: 41s;
+    -ms-animation-delay: 41s;
+    animation-delay: 41s;
 }
 
 
@@ -1210,26 +1192,85 @@ ul.menu li:hover ~ body {
 #houses_decorate{
     width: 588px;
     height: 500px;
-    left: 236px;
+    left: 256px;
     position: fixed;
 }
 #houses_houses{
     width: 480px;
     height: 430px;
-    left: 410px;
-    top: 45px;
+    left: 461px;
+    top: 58px;
     z-index: 1;
     position: fixed;
 }
 #bc_block{
      width: 100%;
-    height: 180px;
+    height: 277px;
     left: 0px;
     bottom: 0px;
     position: fixed;
+    z-index: 1;
 }
 #bc_block > img{
     left: 0px;
-    margin-left: -93px;
+    margin-left: -39px;
+  
 }
+/*#wheel{
+     width: 88%;
+    height: 250px;
+    left: 70px;
+    bottom: 10px;
+    position: fixed;
+}
+#swing1{
+    left: 144px;
+    position: fixed;
+    width: 180px;
+    height: 195px;
+    bottom: 9px;
+}
+#swing1 > img{
+    bottom: 2px;
+    left: 5px;
+}
+#swing2{
+    right: 31px;
+    position: fixed;
+    width: 180px;
+    height: 195px;
+    bottom: 5px;
+}
+#swing2 > img{
+    bottom: 2px;
+    right: 15px;
+}
+#swing1swing{
+    left: 49px;
+    position: absolute;
+    bottom: 205px;
+    width: 100px;
+    height: 50px;
+}
+#swing1swing > img{
+    left: 144px;
+    bottom: 20px;
+}
+#swing2swing{
+    right: 42px;
+    position: absolute;
+    bottom: 204px;
+    width: 100px;
+    height: 50px;
+}
+#swing2swing > img{
+    right: 144px;
+    bottom: 20px;
+}
+
+*/
+
+
+
+
 

@@ -1,0 +1,1055 @@
+slidehtml, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+* {
+    outline:none;
+}
+/*css for rotator */
+
+ananta{
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+    color: #FFB40F;
+
+    font-weight: bold;
+}
+
+
+ananta:hover {
+    background-color: #FFB40F;
+}
+
+.download{
+    background-color:#FFB40F;
+}
+
+ananta.download {
+    position: absolute;
+    top: 3em;
+    left: 0.5em;
+    width: 7em;
+    height: 7em;
+    padding: 1.2em 0;
+    background-image: linear-gradient(rgba(145, 106, 106, 0), rgba(0,0,0,.3));
+  /*  background-color: red;*/
+    color: white;
+    line-height: 1;
+    font-size: 120%;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: .08em .08em .2em rgba(0,0,0,.6);
+    
+    border-radius: 50%;
+    box-shadow: .1em .2em .4em -.2em black;
+    box-sizing: border-box;
+    -webkit-transform: rotate(15deg);
+    -webkit-animation: 3s colorcycle infinite alternate;
+}
+
+ananta.download:hover {
+    -webkit-transform: rotate(375deg);
+    -webkit-transition: 1s transform;
+}
+
+    ananta.download > strong {
+        display: block;
+        margin: .1em 0;
+        font-size: 180%;
+        white-space: nowrap;
+    }
+    
+    
+    
+    ananta.download:hover:after {
+        display: none;
+    }
+
+
+/*css rotator ends */
+
+
+body {
+    background: #000;
+    font-family: "Open Sans", helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: "truelies";
+    src: url(../fonts/truelies.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "vivaldi";
+    src: url(../fonts/Vivaldi.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "agencyfb";
+    src: url(../fonts/01182_AgencyFB.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "game_of_thrones";
+    src: url(../fonts/game_of_thrones.ttf) format("truetype");
+}
+
+/*fmi tickr*/
+
+/*logo*/
+#logo {
+    position: fixed;
+    z-index: 10;
+    left: 3em;
+    bottom: 1.2em;
+    padding: 0;
+    color: #FFF;
+}
+
+/*navbar*/
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+/*
+#register{
+    position: fixed;
+    left:-3.8em;
+    top: 40%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index:10;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+#register:hover {
+    left:-3.5em;
+    box-shadow: 0 0 4px #aaa;
+}
+#register div {
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    font-family: "agencyfb";
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.5em;
+}
+*/
+ul.menu a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul.menu li {
+    float: left;
+    width: 12.5%;
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul.menu li > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 20;
+    background-color: #FFB40F;
+    background: -webkit-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: -o-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: -moz-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), rgba(0, 
+        0, 0, 0.62));
+    font-family:  "game_of_thrones";
+    color:#FFB40F;
+}
+
+ul.menu li a img {
+    border: none;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 55px;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 4px #000;
+    -webkit-box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px #000;
+}
+
+ul.menu li span.wrap {
+    position: absolute;
+    top: -70px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    z-index: 15;
+}
+
+ul.menu li span.active {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    z-index: 14;
+    /*TODO*/
+
+    background-color: #000;
+
+    -moz-box-shadow: 0px 0px 4px #000 inset;
+    -webkit-box-shadow: 0px 0px 4px #000 inset;
+    box-shadow: 0px 0px 4px #000 inset;
+    -webkit-box-shadow: 0px 0px 4px #000 inset;
+    -moz-box-shadow: 0px 0px 4px #000 inset;
+    box-shadow: 0px 0px 4px #000 inset;
+
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 15px;
+}
+
+ul.menu li span span.link, ul.menu li span span.descr, ul.menu li div.box a {
+    margin-left: 20%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+}
+
+ul.menu li span span.link {
+    
+    color: #FFB40F;
+    font-size: 14px;
+    float: left;
+    clear: both;
+}
+
+ul.menu li span span.descr {
+    color: #FFB40F;
+    float: left;
+    clear: both;
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* anwesha banner*/
+
+#banner {
+    position:fixed;
+    z-index:11;
+    left:0.7em;
+    bottom:1.5em;
+    padding:30px;
+    color:#FFB40F;
+    font-size: 55px;
+    text-shadow:rgba(0, 0, 0, 0.50) 0 2px 2px;
+}
+#banner h1 {
+    margin: 5px;
+    font-family: 'truelies', cursive;
+}
+#banner h1 span{
+	font-family:'vivaldi';
+}
+#banner h4 {
+    font-size: 25px;
+    font-family:  "agencyfb";
+    text-align: left;
+    font-weight:normal;
+    margin: 0px;
+}
+
+/*shareicons*/
+#share {
+    position:fixed;
+    z-index:12;
+    left:50%;
+    margin-left: -75px;
+    bottom:20px;
+    padding:10px;
+    width: 150px;
+    height: 36px;
+    color:#FFB40F;
+    border-radius: 20px 20px 0 0;
+}
+#share div {
+    float:left;
+    margin-left:10px;
+    width:35px;
+    height:35px;
+}
+
+#yt{
+    background:url("../img/shareicons/ythover.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+#yt:hover{
+    background:url("../img/shareicons/yt.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+#fb{
+    background:url("../img/shareicons/fbhover.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+#fb:hover{
+    background:url("../img/shareicons/fb.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+#gp{
+    background:url("../img/shareicons/gphover.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+#gp:hover{
+    background:url("../img/shareicons/gp.svg") white;
+    background-size: contain;
+    border-radius:50%;
+}
+
+/*#spon_roll{
+    width:180px;
+    height:180px;
+    position:fixed;
+    right:40px;
+    top:200px;
+    margin-top:-100px;
+    margin-right:60px;
+    background-color:rgba(0, 0, 0, 0);
+}
+*/
+
+/* popup */
+#popupAbout, #popupContact, #popupArchives, #popupEvents {
+    height: 450px;
+    width: 900px;
+    overflow: auto;
+    background-color: #FFB40F;
+    border: 1px solid #cecece;
+    z-index: 15;
+    padding: 20px;
+    color: #FFB40F;
+    -webkit-box-shadow: 0px 0px 4px #000 inset;
+    -moz-box-shadow: 0px 0px 4px #000 inset;
+    box-shadow: 0px 0px 4px #000 inset;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    visibility: hidden;
+}
+
+#popupCS {
+    height: 150px;
+    width: 900px;
+    overflow: auto;
+    background-color: #FFB40F;
+    border: 1px solid #cecece;
+    z-index: 15;
+    padding: 20px;
+    color: #FFF;
+    -webkit-box-shadow: 0px 0px 4px #000 inset;
+    -moz-box-shadow: 0px 0px 4px #000 inset;
+    box-shadow: 0px 0px 4px #000 inset;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    visibility: hidden;
+
+}
+
+
+#popupAbout p, #popupContact p, #popupArchives p, #popupEvents p, #popupCS p {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#popupAbout p font, #popupContact span, #popupArchives p font, #popupEvents p 
+font, #popupCS p font {
+    color:#FFB40F;
+}
+
+#popupAbout h1, #popupContact h1, #popupArchives h1, #popupEvents h1, #popupCS 
+h1 {
+    text-align: left;
+    font-family:game_of_thrones;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #D3D3D3;
+    padding-bottom: 2px;
+    margin: 0;
+}
+#popupAboutClose, #popupContactClose, #popupArchivesClose, #popupEventsClose, 
+#popupCSClose {
+    right: 0;
+    top: 15px;
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+
+#popupAboutClose:hover, #popupContactClose:hover, #popupArchivesClose:hover, 
+#popupEventsClose:hover, #popupCSClose:hover {
+    opacity: 1;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+
+#popupEvents #event-list{
+    list-style-type: none;
+    width: 95%;
+    margin-top: 6em;
+    padding: 1em;
+}
+
+#popupEvents #event-list li {
+    display: inline-block;
+    margin: 0.3em;
+    position: relative;
+}
+
+#popupEvents #event-list li img {
+    height: 150px;
+    width: 150px;
+}
+
+#popupEvents #event-list li span {
+    font-family: "game_of_thrones";
+    position: absolute;
+    font-size: 1.5em;
+    bottom: -1em;
+    left: 1.25em;
+    color: #FFB40F;
+    text-shadow: 0 0 5px blue;
+}
+
+#popupContact table {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#popupContact table  td{
+    margin: 10px;
+    box-shadow: 0px 0px 45px rgba(255, 255, 255, 0.5) inset;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+/*slideshow*/
+#slideshow{
+    z-index:10;
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    opacity: 1;
+}
+
+.cb-slideshow li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.cb-slideshow:after {
+    content: '';
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 48s linear infinite 0s;
+    -moz-animation: imageAnimation 48s linear infinite 0s;
+    -o-animation: imageAnimation 48s linear infinite 0s;
+    -ms-animation: imageAnimation 48s linear infinite 0s;
+    animation: imageAnimation 48s linear infinite 0s;
+}
+ul.menu li:hover ~ body {
+    opacity:0.85;
+}
+.nextImageBtn, .prevImageBtn {
+    display:block;
+    position:absolute;
+    width:50px;
+    height:50px;
+    top:50%;
+    margin:-25px 10px 0 10px;
+    z-index:3;
+    filter:alpha(opacity=40);
+    -moz-opacity:0.4;
+    -khtml-opacity:0.4;
+    opacity:0.4;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+.nextImageBtn:hover, .prevImageBtn:hover {
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity:0.8;
+    opacity:0.8;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+.nextImageBtn {
+    right:0;
+    background:#000 url(../img/nextImgBtn.png) center center no-repeat;
+}
+.prevImageBtn {
+    background:#000 url(../img/prevImgBtn.png) center center no-repeat;
+}
+
+#bg {
+    position:fixed;
+    z-index:1;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: url(../img/dotted.png);
+    opacity: 0.3;
+}
+#bgimg {
+    display:none;
+    -ms-interpolation-mode: bicubic;
+}
+#preloader {
+    position:relative;
+    z-index:3;
+    width:32px;
+    padding:20px;
+    top:80px;
+    margin:auto;
+    background:#000;
+}
+#thumbnails_wrapper {
+    z-index:2;
+    position:fixed;
+    bottom:0%;
+    width:100%;
+    height: 205px;
+    background:url(../img/empty.gif); /* stupid ie needs a background value to understand hover area */
+}
+#outer_container {
+    position:relative;
+    padding:0;
+    width:100%;
+    margin:40px auto;
+}
+#outer_container .thumbScroller {
+    position:relative;
+    overflow:hidden;
+    background:url(../img/fs_img_g_bg.png);
+    background: rgba(0,0,0,0.850);
+}
+#outer_container .thumbScroller, #outer_container .thumbScroller .container, #outer_container .thumbScroller .content {
+    height:170px;
+}
+#outer_container .thumbScroller .container {
+    position:relative;
+    left:0;
+}
+#outer_container .thumbScroller .content {
+    float:left;
+}
+#outer_container .thumbScroller .content div {
+    margin:5px;
+    height:100%;
+}
+#outer_container .thumbScroller img {
+    border:3px solid #fff;
+}
+#outer_container .thumbScroller .content div a {
+    display:block;
+    padding:5px;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    top: -10em;
+    right: 1em;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 48s linear infinite 0s;
+    -moz-animation: titleAnimation 48s linear infinite 0s;
+    -o-animation: titleAnimation 48s linear infinite 0s;
+    -ms-animation: titleAnimation 48s linear infinite 0s;
+    animation: titleAnimation 48s linear infinite 0s;
+}
+
+.cb-slideshow li div h3 {
+    font-family: "game_of_thrones";
+    font-size: 30px;
+    padding: 0;
+    padding-right: 30px;
+    line-height: 900px;
+    text-shadow:#000 2px 2px 2px;
+}
+
+.cb-slideshow li:nth-child(1) span {
+
+    background-image:url(../img/gallery/1.jpg);
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.cb-slideshow li:nth-child(2) span {
+    /*background-image: url(../img/gallery/2.jpg);*/
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../img/gallery/2.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../img/gallery/3.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../img/gallery/4.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../img/gallery/5.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(7) span {
+    background-image: url(../img/gallery/6.jpg);
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
+}
+
+.cb-slideshow li:nth-child(8) span {
+    background-image: url(../img/gallery/7.jpg);
+    -webkit-animation-delay: 42s;
+    -moz-animation-delay: 42s;
+    -o-animation-delay: 42s;
+    -ms-animation-delay: 42s;
+    animation-delay: 42s;
+}
+
+.cb-slideshow li:nth-child(1) div {
+
+}
+
+.cb-slideshow li:nth-child(2) div {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) div {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) div {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) div {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) div {
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(7) div {
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
+}
+
+.cb-slideshow li:nth-child(8) div {
+    -webkit-animation-delay: 42s;
+    -moz-animation-delay: 42s;
+    -o-animation-delay: 42s;
+    -ms-animation-delay: 42s;
+    animation-delay: 42s;
+}
+
+
+/* Animation for the slideshow img */
+@-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+    }
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes imageAnimation {
+    0% {opacity: 0;
+        -moz-animation-timing-function: ease-in;
+    }
+    8% {opacity: 1;
+        -moz-animation-timing-function: ease-out;
+    }
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-o-keyframes imageAnimation {
+    0% {opacity: 0;
+        -o-animation-timing-function: ease-in;
+    }
+    8% {opacity: 1;
+        -o-animation-timing-function: ease-out;
+    }
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-ms-keyframes imageAnimation {
+    0% {opacity: 0;
+        -ms-animation-timing-function: ease-in;
+    }
+    8% {opacity: 1;
+        -ms-animation-timing-function: ease-out;
+    }
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+
+    }
+    8% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+/* Animation for the title */
+@-webkit-keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+    8% {
+        opacity: 1
+    }
+    17% {
+        opacity: 1
+    }
+    19% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+    8% {
+        opacity: 1
+    }
+    17% {
+        opacity: 1
+    }
+    19% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+    8% {
+        opacity: 1
+    }
+    17% {
+        opacity: 1
+    }
+    19% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+    8% {
+        opacity: 1
+    }
+    17% {
+        opacity: 1
+    }
+    19% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+    8% {
+        opacity: 1
+    }
+    17% {
+        opacity: 1
+    }
+    19% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+    .cb-slideshow li div h3 {
+        font-size: 140px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cb-slideshow li div h3 {
+        font-size: 80px
+    }
+}
+
+/* news */
+
+#news {
+    position:fixed;
+    z-index:10;
+    right:-5px;
+    border: rgba(100,100,100,0.3) solid 2px;
+    border-radius: 35px 0 35px 0;
+    bottom:0px;
+    width: 395px;
+    height: 150px;
+    color:white;
+    background-color: rgba(0,0,0,0.6);
+    text-shadow:rgba(0, 0, 0, 0.50) 0 1px 1px;
+    padding:10px;
+    overflow-y:auto;
+}
+#news p{
+    font-size: 15px;
+}
+#news a {
+    text-decoration:none;
+    color: rgb(255, 187, 166);
+    border-bottom: 1px dashed #FFF;
+
+}
+#news h1{
+   margin: -0.33em 0;
+    text-align: left;
+    font-family:game_of_thrones;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #D3D3D3;
+    padding-bottom: -2px;
+    margin: 0;
+}
+
+p
+{
+    font-family:game_of_thrones;
+    color:#FFB40F;
+}
+
+h4
+{
+    font-family:game_of_thrones;
+    color:#FFB40F;
+}
+
+

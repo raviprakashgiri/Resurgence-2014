@@ -36,7 +36,7 @@
 				$("#popupAbout").css({
 					"visibility": "visible"	});
 //					disablePopupProjects();
-					disablePopupContact();
+					disablePopuptoday();
 					disablePopupArchives();
 					disablePopupEvents();
 					disablePopupCS();
@@ -56,65 +56,65 @@
 			});
 			});
 
-//Contact Page Pop Up
-			var popupContactStatus = 0;
+//Todays Page Pop Up
+			var popuptodayStatus = 0;
 			
-			function loadPopupContact(){
-				if(popupContactStatus==0){
-					$("#popupContact").fadeIn("slow");
-					popupContactStatus = 1;
+			function loadPopuptoday(){
+				if(popuptodayStatus==0){
+					$("#popuptoday").fadeIn("slow");
+					popuptodayStatus = 1;
 				}
 			}
 			
-			function disablePopupContact(){
-				if(popupContactStatus==1){
-					$("#popupContact").fadeOut("slow");
-					popupContactStatus = 0;
+			function disablePopuptoday(){
+				if(popuptodayStatus==1){
+					$("#popuptoday").fadeOut("slow");
+					popuptodayStatus = 0;
 				}
 			}
 			
-			function centerPopupContact(){
+			function centerPopuptoday(){
 				var windowWidth = document.documentElement.clientWidth;
 				var windowHeight = document.documentElement.clientHeight;
-				var popupContactHeight = $("#popupContact").height();
-				var popupContactWidth = $("#popupContact").width();
-				$("#popupContact").css({
+				var popuptodayHeight = $("#popuptoday").height();
+				var popuptodayWidth = $("#popuptoday").width();
+				$("#popuptoday").css({
 					"position": "absolute",
-					"top": windowHeight/2-popupContactHeight/2,
-					"left": windowWidth/2-popupContactWidth/2
+					"top": windowHeight/2-popuptodayHeight/2,
+					"left": windowWidth/2-popuptodayWidth/2
 				});
 			}
 			
 			
 			$(document).ready(function(){
-				$("#popupContact").fadeOut();
-				popupContactStatus = 0;
-				$("#contact").click(function(){
-				$("#popupContact").css({
+				$("#popuptoday").fadeOut();
+				popuptodayStatus = 0;
+				$("#today").click(function(){
+				$("#popuptoday").css({
 					"visibility": "visible"	});
 					disablePopupAbout();
 //					disablePopupProjects();
 					disablePopupArchives();
 					disablePopupEvents(),
 					disablePopupCS();					
-					centerPopupContact();
-					loadPopupContact();
-				    $("#popupContact").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);						
+					centerPopuptoday();
+					loadPopuptoday();
+				    $("#popuptoday").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);						
 				});
-				$("#popupContactClose").click(function(){
-					disablePopupContact();
+				$("#popuptodayClose").click(function(){
+					disablePopuptoday();
 				});
 				$("#bg").click(function(){
-					disablePopupContact();
+					disablePopuptoday();
 				});
 				$(document).keyup(function(e){
 				if(e.keyCode === 27)
-					disablePopupContact();
+					disablePopuptoday();
 			});
 			});
 
 
-//Archives pop up
+//Wrapper_startup pop up
 			var popupArchivesStatus = 0;
 			
 			function loadPopupArchives(){
@@ -150,7 +150,7 @@
 					"visibility": "visible"	});
 					disablePopupAbout();
 //					disablePopupProjects();	
-					disablePopupContact();			
+					disablePopuptoday();			
 					disablePopupCS();
 					centerPopupArchives();
 					loadPopupArchives();
@@ -161,7 +161,7 @@
 					"visibility": "visible"	});
 					disablePopupAbout();
 //					disablePopupProjects();	
-					disablePopupContact();			
+					disablePopuptoday();			
 					disablePopupCS();
 					centerPopupArchives();
 					loadPopupArchives();
@@ -219,7 +219,7 @@
 					"visibility": "visible"	});
 					disablePopupAbout();
 //					disablePopupProjects();	
-					disablePopupContact();			
+					disablePopuptoday();			
 					disablePopupCS();
 					centerPopupEvents();
 					loadPopupEvents();
@@ -272,7 +272,7 @@ function assignpopup(){
         "visibility": "visible"	});
     disablePopupAbout();
 //    disablePopupProjects();
-    disablePopupContact();
+    disablePopuptoday();
     centerPopupCS();
     loadPopupCS();
     $("#popupCS").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);
@@ -282,9 +282,9 @@ function assignpopup(){
 			$(document).ready(function(){
 				$("#popupCS").fadeOut();
 				popupCSStatus = 0;
-                $("#sponsors").click(function(){assignpopup()});
+              /*  $("#sponsors").click(function(){assignpopup()});*/
                 $("#events").click(function(){assignpopup()});
-                $("#pronites").click(function(){assignpopup()});
+             /*   $("#pronites").click(function(){assignpopup()});*/
                 $("#Schedule").click(function(){assignpopup()});
 				$("#popupCSClose").click(function(){
 					disablePopupCS();
@@ -297,3 +297,4 @@ function assignpopup(){
 					disablePopupCS();
 			});
 			});
+

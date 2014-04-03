@@ -9,7 +9,7 @@
 	border-width: 1px;
 	border-style: solid;
 	position: fixed;
-	width: 460px;
+	width: 500px;
 	height: 320px;
 	left: 100%;
 	top: 50%;
@@ -32,8 +32,9 @@
 	border-bottom-style: solid;
 	border-bottom-color: white;
 	border-bottom-width: 1px;
+	border-radius: 10px;
 	position: absolute;
-	width: 445px;
+	width: 486px;
 	height: 38px;
 	top: 0;
 	left: 0;

@@ -1,0 +1,481 @@
+
+body {
+  background: #f6f6f4;
+  color: #575350;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 16, ../var/www/app/Resources/public/scss/_type.scss */
+a:link {
+  color: #6c97a3;
+  font-family: "proxima-nova", sans-serif;
+}
+
+/* line 21, ../var/www/app/Resources/public/scss/_type.scss */
+a:visited {
+  color: #6c97a3;
+}
+
+/* line 25, ../var/www/app/Resources/public/scss/_type.scss */
+a:hover {
+  color: #99b3ba;
+  text-decoration: none;
+}
+
+/* line 30, ../var/www/app/Resources/public/scss/_type.scss */
+a:active {
+  color: #99b3ba;
+}
+
+
+
+/* line 107, assetic_compassx98ejS.scss */
+.section {
+  margin-top: 4.286em;
+}
+@media (max-width: 767px) {
+  /* line 107, assetic_compassx98ejS.scss */
+  .section {
+    margin-top: 3em;
+  }
+}
+/* line 114, assetic_compassx98ejS.scss */
+.section .container {
+  margin: 3em auto;
+}
+@media (max-width: 767px) {
+  /* line 114, assetic_compassx98ejS.scss */
+  .section .container {
+    margin: 3em 20px 0em;
+  }
+}
+
+
+
+.team .buttons .container {
+  padding: 2.857em 25px;
+  margin: auto;
+           /* @media (max-width: 1200px) {
+		       width: 830px;
+		    }
+		    
+		    @media (max-width: 930px) {
+		       width: 660px;
+		    }
+		    
+		     @media (max-width: 760px) {
+		       width: 500px;
+		    }
+		    
+		    
+		     @media (max-width: 500px) {
+		       width: auto;
+		    }*/
+}
+/* line 112, assetic_compassGVcAfG.scss */
+.team .buttons .row {
+  margin-bottom: 0.5em;
+}
+/* line 117, assetic_compassGVcAfG.scss */
+.team .tooltip {
+  width: 160px;
+  padding: 10px;
+  background: black;
+  color: #bcbcbc;
+  bottom: 40px;
+  left: -81px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  display: none;
+  line-height: 15px;
+}
+/* line 130, assetic_compassGVcAfG.scss */
+.team .tooltip span.title {
+  color: #666363;
+  font-weight: 600;
+  display: block;
+  font-size: 10px;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  padding-top: 2px;
+  line-height: 13px;
+}
+/* line 140, assetic_compassGVcAfG.scss */
+.team .tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  margin-left: -15px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: black transparent;
+  display: block;
+  width: 0;
+}
+/* line 154, assetic_compassGVcAfG.scss */
+.team .member-detail {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin: auto;
+  max-width: 1150px;
+}
+@media (max-width: 1200px) {
+  /* line 154, assetic_compassGVcAfG.scss */
+  .team .member-detail {
+    max-width: 960px;
+  }
+}
+@media (max-width: 960px) {
+  /* line 154, assetic_compassGVcAfG.scss */
+  .team .member-detail {
+    max-width: 760px;
+  }
+}
+/* line 168, assetic_compassGVcAfG.scss */
+.team .member-detail h3 {
+  color: #666363;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0px 60px;
+}
+@media (max-width: 500px) {
+  /* line 168, assetic_compassGVcAfG.scss */
+  .team .member-detail h3 {
+    margin-top: 0px;
+  }
+}
+/* line 179, assetic_compassGVcAfG.scss */
+.team .member-detail h3 span {
+  font-weight: normal;
+}
+/* line 184, assetic_compassGVcAfG.scss */
+.team .member-detail .title {
+  position: relative;
+}
+/* line 189, assetic_compassGVcAfG.scss */
+.team .member-detail .close {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 5;
+}
+/* line 194, assetic_compassGVcAfG.scss */
+.team .member-detail .close .image {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  text-indent: 0px;
+  color: #969692;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+@media (max-width: 767px) {
+  /* line 194, assetic_compassGVcAfG.scss */
+  .team .member-detail .close .image {
+    line-height: 35px;
+  }
+}
+/* line 209, assetic_compassGVcAfG.scss */
+.team .member-detail .container {
+  display: none;
+  position: absolute;
+}
+@media (max-width: 500px) {
+  /* line 209, assetic_compassGVcAfG.scss */
+  .team .member-detail .container {
+    margin: 1em 20px 1em;
+  }
+}
+/* line 219, assetic_compassGVcAfG.scss */
+.team .teamcontainer {
+  text-align: center;
+  max-width: 850px;
+}
+/* line 223, assetic_compassGVcAfG.scss */
+.team .member {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  overflow: visible;
+}
+/* line 232, assetic_compassGVcAfG.scss */
+.team .member .tooltip {
+  display: block;
+  left: auto;
+  bottom: auto;
+  position: static;
+  background: none;
+  text-align: center;
+  width: auto;
+  color: #bcbcbc;
+  line-height: 15px;
+  font-size: 14px;
+  padding: 0px;
+  margin: 10px auto 6px;
+  width: 140px;
+}
+/* line 246, assetic_compassGVcAfG.scss */
+.team .member .tooltip span.name {
+  padding-bottom: 2px;
+  font-size: 13px;
+  display: block;
+}
+/* line 251, assetic_compassGVcAfG.scss */
+.team .member .tooltip span.title {
+  color: #666363;
+  font-size: 11px;
+}
+/* line 255, assetic_compassGVcAfG.scss */
+.team .member .tooltip:after {
+  content: none;
+  border: none;
+}
+/* line 260, assetic_compassGVcAfG.scss */
+.team .member .images {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #1f1d1c;
+  height: 125px;
+  overflow: hidden;
+  width: 125px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 271, assetic_compassGVcAfG.scss */
+.team .member .imagebw, .team .member .imagec {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* Prevent background color leak outs */
+  background-position: 50% 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #6c97a3;
+  background-size: cover;
+}
+/* line 289, assetic_compassGVcAfG.scss */
+.team .member .imagebw img, .team .member .imagec img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+}
+/* line 298, assetic_compassGVcAfG.scss */
+.team .member .imagebw {
+  z-index: 1;
+  background-color: black;
+}
+/* line 304, assetic_compassGVcAfG.scss */
+.team .member.active, .team .member:hover {
+  z-index: 5;
+}
+/* line 306, assetic_compassGVcAfG.scss */
+.team .member.active .imagebw, .team .member:hover .imagebw {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 309, assetic_compassGVcAfG.scss */
+.team .member.active .images, .team .member:hover .images {
+  border-color: #6c97a3;
+}
+/* line 314, assetic_compassGVcAfG.scss */
+.team .member:hover .tooltip {
+  display: block;
+}
+/* line 327, assetic_compassGVcAfG.scss */
+.team .areas {
+  width: 100%;
+  max-width: 765px;
+  height: 100%;
+  top: -8px;
+  position: relative;
+  margin: 0px auto -25px;
+}
+/* line 337, assetic_compassGVcAfG.scss */
+.team .areas .employees {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 343, assetic_compassGVcAfG.scss */
+.team .areas .employee {
+  z-index: 1;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+/* line 356, assetic_compassGVcAfG.scss */
+.team .areas .employee .marker {
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  background-color: #0a3038;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* line 362, assetic_compassGVcAfG.scss */
+.team .areas .employee .marker:before {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  opacity: .5;
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  border: 7px #0a3038 solid;
+}
+/* line 376, assetic_compassGVcAfG.scss */
+.team .areas .employee.active .marker {
+  background-color: #f6f6f4;
+}
+/* line 386, assetic_compassGVcAfG.scss */
+.team .areas [data-id="kathrynstracquatanio"] {
+  left: 65.35948%;
+  top: 68.65672%;
+}
+/* line 390, assetic_compassGVcAfG.scss */
+.team .areas [data-id="putraroeung"] {
+  left: 70.98039%;
+  top: 58.80597%;
+}
+/* line 394, assetic_compassGVcAfG.scss */
+.team .areas [data-id="marklloberera"] {
+  left: 64.96732%;
+  top: 54.32836%;
+}
+/* line 398, assetic_compassGVcAfG.scss */
+.team .areas [data-id="stephenhurwitz"] {
+  left: 65.88235%;
+  top: 39.10448%;
+}
+/* line 402, assetic_compassGVcAfG.scss */
+.team .areas [data-id="paulrudolph"] {
+  left: 58.56209%;
+  top: 7.76119%;
+}
+/* line 406, assetic_compassGVcAfG.scss */
+.team .areas [data-id="staceymartens"] {
+  left: 50.3268%;
+  top: 21.19403%;
+}
+/* line 410, assetic_compassGVcAfG.scss */
+.team .areas [data-id="alex"] {
+  left: 48.75817%;
+  top: 76.41791%;
+}
+/* line 414, assetic_compassGVcAfG.scss */
+.team .areas [data-id="aaronrichardson"] {
+  left: 38.95425%;
+  top: 67.76119%;
+}
+/* line 418, assetic_compassGVcAfG.scss */
+.team .areas [data-id="theresadecker"] {
+  left: 29.41176%;
+  top: 72.83582%;
+}
+/* line 422, assetic_compassGVcAfG.scss */
+.team .areas [data-id="kimquinn"] {
+  left: 27.18954%;
+  top: 56.71642%;
+}
+/* line 426, assetic_compassGVcAfG.scss */
+.team .areas [data-id="aaronmiller"] {
+  left: 36.60131%;
+  top: 15.52239%;
+}
+/* line 430, assetic_compassGVcAfG.scss */
+.team .areas [data-id="victoriajones"] {
+  left: 34.77124%;
+  top: 25.37313%;
+}
+/* line 434, assetic_compassGVcAfG.scss */
+.team .areas [data-id="harrison"] {
+  left: 23.00654%;
+  top: 14.92537%;
+}
+/* line 438, assetic_compassGVcAfG.scss */
+.team .areas [data-id="rebeccasmith"] {
+  left: 26.79739%;
+  top: 35.8209%;
+}
+/* line 442, assetic_compassGVcAfG.scss */
+.team .areas [data-id="rebeccasherman"] {
+  left: 35.1634%;
+  top: 34.92537%;
+}
+/* line 446, assetic_compassGVcAfG.scss */
+.team .areas [data-id="joshgoldblum"] {
+  left: 50.3268%;
+  top: 60.29851%;
+}
+/* line 450, assetic_compassGVcAfG.scss */
+.team .areas [data-id="troylachance"] {
+  left: 47.05882%;
+  top: 53.43284%;
+}
+/* line 454, assetic_compassGVcAfG.scss */
+.team .areas [data-id="kaylagrove"] {
+  left: 19.60784%;
+  top: 38.80597%;
+}
+/* line 458, assetic_compassGVcAfG.scss */
+.team .areas [data-id="bradbaer"] {
+  left: 35.29412%;
+  top: 77.61194%;
+}
+/* line 462, assetic_compassGVcAfG.scss */
+.team .areas [data-id="wyattglennon"] {
+  left: 24.8366%;
+  top: 74.62687%;
+}
+/* line 467, assetic_compassGVcAfG.scss */
+.team .areas [data-id="calebheisey"] {
+  left: 19.60784%;
+  top: 65.67164%;
+}
+/* line 471, assetic_compassGVcAfG.scss */
+.team .areas [data-id="gregsarault"] {
+  left: 71.89542%;
+  top: 41.79104%;
+}
+/* line 475, assetic_compassGVcAfG.scss */
+.team .areas [data-id="peterhall"] {
+  left: 29.41176%;
+  top: 23.8806%;
+}
+/* line 481, assetic_compassGVcAfG.scss */
+.team .areas .graphic img {
+  max-width: 765px;
+  width: 100%;
+}
+
