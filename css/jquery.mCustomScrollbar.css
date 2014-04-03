@@ -119,7 +119,8 @@
 }
 #popupEvents .customScrollBox .container {
 	position:relative;
-	width:880px;
+	width:1100px;
+    height: auto;
 	top:0;
 	float:left;
 }
@@ -246,7 +247,7 @@
 	opacity:0.20;
 }
 #popupAbout .scrollUpBtn{
-	top:16px;
+	top:28px;
 	background:url(../img/mcs_btnUp.png) center center no-repeat;
 	-webkit-transition:all .25s linear;
 	-moz-transition:all .25s linear;
@@ -255,7 +256,7 @@
 	transition:all .25s linear;
 }
 #popupEvents .scrollUpBtn {
-	top:16px;
+	top:28px;
 	background:url(../img/mcs_btnUp.png) center center no-repeat;
 	-webkit-transition:all .25s linear;
 	-moz-transition:all .25s linear;
@@ -403,21 +404,21 @@ cursor:pointer -moz-border-radius:2px;
 	-ms-transition:all .25s linear;
 	transition:all .25s linear;
 }
-#popupContact .customScrollBox {
+#popuptoday .customScrollBox {
 	position:relative;
 	height:100%;
 	overflow:hidden;
 }
-#popupContact .customScrollBox .container {
+#popuptoday .customScrollBox .container {
 	position:relative;
 	width:880px;
 	top:0;
 	float:left;
 }
-#popupContact .customScrollBox .content {
+#popuptoday .customScrollBox .content {
 	clear:both;
 }
-#popupContact .dragger_container {
+#popuptoday .dragger_container {
 	position:relative;
 	width:2px;
 	height:525px;
@@ -430,7 +431,7 @@ cursor:pointer -moz-border-radius:2px;
 	border-radius:2px;
 	cursor:s-resize;
 }
-#popupContact .dragger {
+#popuptoday .dragger {
 	position:absolute;
 	width:2px;
 	height:60px;
@@ -445,7 +446,7 @@ cursor:pointer -moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
 }
-#popupContact .dragger_pressed {
+#popuptoday .dragger_pressed {
 	position:absolute;
 	width:4px;
 	margin-left:-1px;
@@ -461,7 +462,7 @@ cursor:pointer -moz-border-radius:2px;
 	border-radius:4px;
 	cursor:s-resize;
 }
-#popupContact .scrollUpBtn, #popupContact .scrollDownBtn {
+#popuptoday .scrollUpBtn, #popuptoday .scrollDownBtn {
 	position:absolute;
 	display:inline-block;
 	width:14px;
@@ -474,7 +475,7 @@ cursor:pointer -moz-border-radius:2px;
 	-khtml-opacity:0.20;
 	opacity:0.20;
 }
-#popupContact .scrollUpBtn {
+#popuptoday .scrollUpBtn {
 	top:16px;
 	background:url(../img/mcs_btnUp.png) center center no-repeat;
 	-webkit-transition:all .25s linear;
@@ -483,7 +484,7 @@ cursor:pointer -moz-border-radius:2px;
 	-ms-transition:all .25s linear;
 	transition:all .25s linear;
 }
-#popupContact .scrollDownBtn {
+#popuptoday .scrollDownBtn {
 	bottom:12px;
 	background:url(../img/mcs_btnDown.png) center center no-repeat;
 	-webkit-transition:all .25s linear;
@@ -492,7 +493,7 @@ cursor:pointer -moz-border-radius:2px;
 	-ms-transition:all .25s linear;
 	transition:all .25s linear;
 }
-#popupContact .scrollUpBtn:hover, #popupContact .scrollDownBtn:hover {
+#popuptoday .scrollUpBtn:hover, #popuptoday .scrollDownBtn:hover {
 	filter:alpha(opacity=60);
 	-moz-opacity:0.60;
 	-khtml-opacity:0.60;

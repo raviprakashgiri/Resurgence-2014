@@ -2,7 +2,10 @@
     font-family: "agencyfb";
     src: url(../fonts/01182_AgencyFB.ttf) format("truetype");
 }
-
+@font-face {
+    font-family: "agencyfb";
+    src: url(../fonts/01182_AgencyFB.ttf) format("truetype");
+}
 
 slidehtml, body {
     height: 100%;
@@ -30,30 +33,13 @@ slidehtml, body {
 #ananta > a{
     animation-duration: 12s;
     animation-iteration-count:infinite;
-    background-color: slategray;
+    background-color: firebrick;
     font-weight: bold;
 }
-<<<<<<< HEAD
 
-=======
-/*vid{
-    overflow:hidden;
-    height: 768px;
-    width: 1366px;
-    margin-left:0px;
-    margin-top: 0px;
-    top:0px;
-    bottom:768px;
-    
-}
-video{
-    image-fit: fill;
-}
-*/
->>>>>>> master
 #ananta > a:hover {
-   /* background-color: slategray;*/
-   background-color: firebrick;
+    background-color: slategray;
+  
  }
 #ananta > a.download {
     position: absolute;
@@ -429,84 +415,49 @@ ul.menu li span span.descr {
 }
 
 #yt{
-<<<<<<< HEAD
     background:url("../img/shareicons/y1.png") #CFB538;
-=======
-    background:url("../img/shareicons/y1.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #yt:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/y2.png") #CFB538;
-=======
-    background:url("../img/shareicons/y2.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb{
-<<<<<<< HEAD
     background:url("../img/shareicons/fb1.png") #CFB538;
-=======
-    background:url("../img/shareicons/fb1.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/fb2.png") #CFB538;
-=======
-    background:url("../img/shareicons/fb2.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp{
-<<<<<<< HEAD
     background:url("../img/shareicons/g2.png") #CFB538;
-=======
-    background:url("../img/shareicons/g2.png") white;
->>>>>>> master
     background-size: contain;
    /* border-radius:50%;*/
     border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp:hover{
-<<<<<<< HEAD
     background:url("../img/shareicons/g1.png") #CFB538;
-=======
-    background:url("../img/shareicons/g1.png") white;
->>>>>>> master
     background-size: contain;
     border-radius:50%;
     border: rgba(0,0,0,0.6) solid 2px;
 }
 
-/*#spon_roll{
-    width:180px;
-    height:180px;
-    position:absolute;
-    right:40px;
-    top:200px;
-    margin-top:-100px;
-    margin-right:60px;
-    background-color:rgba(0, 0, 0, 0);
-}
-*/
 
 /* popup */
-#popupAbout, #popupContact, #popupEvents {
-    height: 450px;
-    width: 900px;
+#popupAbout, #popupEvents {
+    height: 500px;
+    width: 1100px;
     overflow: auto;
-    background-color: #FFB40F;
+    background-color: rgba(0,0,0,0.6);
     border: 1px solid #cecece;
     z-index: 10005;
     padding: 20px;
@@ -520,7 +471,7 @@ ul.menu li span span.descr {
     -ms-border-radius: 10px;
     -khtml-border-radius: 10px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 5px;
     visibility: hidden;
 }
 
@@ -533,28 +484,18 @@ ul.menu li span span.descr {
     z-index: 10005;
    /* padding: 20px;*/
     color: #FFB40F;
-  /*  -webkit-box-shadow: 0px 0px 4px #000 inset;
-    -moz-box-shadow: 0px 0px 4px #000 inset;
-    box-shadow: 0px 0px 4px #000 inset;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
-    visibility: hidden;*/
+
  }
 
 #popupCS {
     height: 150px;
     width: 900px;
     overflow: auto;
-    background-color: #FFB40F;
-    border: 1px solid #cecece;
+    background-color: rgba(0,0,0,0.6);
+    border: rgba(100,100,100,0.3) solid 2px;
     z-index: 15;
     padding: 20px;
-    color: #FFF;
+    color: #FFB40F;
     -webkit-box-shadow: 0px 0px 4px #000 inset;
     -moz-box-shadow: 0px 0px 4px #000 inset;
     box-shadow: 0px 0px 4px #000 inset;
@@ -569,18 +510,18 @@ ul.menu li span span.descr {
 }
 
 
-#popupAbout p, #popupContact p,#popupEvents p, #popupCS p {
+#popupAbout p, #popuptoday p,#popupEvents p, #popupCS p {
     padding-left: 10px;
     font-size: 16px;
     line-height: 24px;
 }
 
-#popupAbout p font, #popupContact span,font, #popupEvents p 
+#popupAbout p font, #popuptoday span,font, #popupEvents p 
 font, #popupCS p font {
     color:#FFB40F;
 }
 
-#popupAbout h1, #popupContact h1,#popupEvents h1, #popupCS 
+#popupAbout h1, #popuptoday h1,#popupEvents h1, #popupCS 
 h1 {
     text-align: left;
     font-family:game_of_thrones;
@@ -590,10 +531,10 @@ h1 {
     padding-bottom: 2px;
     margin: 0;
 }
-#popupAboutClose, #popupContactClose, #popupEventsClose, 
+#popupAboutClose, #popuptodayClose, #popupEventsClose, 
 #popupCSClose {
     right: 0;
-    top: 15px;
+    top: -2px;
     position: absolute;
     display: block;
     opacity: 0.5;
@@ -603,24 +544,28 @@ h1 {
     -ms-transition:all .25s linear;
     transition:all .25s linear;
 }
+
 
 #popupArchivesClose{
-    bottom: 62px;
-    left: 672px;
+    width:66px; height:31px;
+     bottom: 24px;
+    left: 655px;
     position: absolute;
-    display: block;
-    width: 45px;
-    height: 25px;
-    border: 1px solid black;
-    opacity: 0.5;
+     z-index: 1;
     -webkit-transition:all .25s linear;
     -moz-transition:all .25s linear;
     -o-transition:all .25s linear;
     -ms-transition:all .25s linear;
     transition:all .25s linear;
-}
+    display: block;
+    
+    background-repeat: no-repeat;
+    background-image: url('../img/enter_down.png');}
 
-#popupAboutClose:hover, #popupContactClose:hover, #popupArchivesClose:hover, 
+#bc_block:hover ~ #popupArchivesClose {background-image: url('../img/enter.png'); cursor:pointer;}
+ #popupArchivesClose:hover {cursor:pointer;}
+
+#popupAboutClose:hover, #popuptodayClose:hover, 
 #popupEventsClose:hover, #popupCSClose:hover {
     opacity: 1;
     -webkit-transition:all .25s linear;
@@ -630,48 +575,7 @@ h1 {
     transition:all .25s linear;
 }
 
-#popupEvents #event-list{
-    list-style-type: none;
-    width: 95%;
-    margin-top: 6em;
-    padding: 1em;
-}
 
-#popupEvents #event-list li {
-    display: inline-block;
-    margin: 0.3em;
-    position: relative;
-}
-
-#popupEvents #event-list li img {
-    height: 150px;
-    width: 150px;
-}
-
-#popupEvents #event-list li span {
-    font-family: "game_of_thrones";
-    position: absolute;
-    font-size: 1.5em;
-    bottom: -1em;
-    left: 1.25em;
-    color: #FFB40F;
-    text-shadow: 0 0 5px blue;
-}
-
-#popupContact table {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 10px;
-}
-
-#popupContact table  td{
-    margin: 10px;
-    box-shadow: 0px 0px 45px rgba(255, 255, 255, 0.5) inset;
-    border-radius: 5%;
-    padding: 10px;
-}
 
 /*slideshow*/
 #slideshow{
@@ -866,7 +770,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../img/gallery/3.jpg);
+   background-image: url(../img/gallery/2.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -875,7 +779,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../img/gallery/2.jpg);
+    background-image: url(../img/gallery/3.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -884,7 +788,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(../img/gallery/3.jpg);
+    background-image: url(../img/gallery/4.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -893,7 +797,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../img/gallery/4.jpg);
+    background-image: url(../img/gallery/5.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -902,7 +806,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(../img/gallery/5.jpg);
+    background-image: url(../img/gallery/6.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -911,7 +815,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(7) span {
-    background-image: url(../img/gallery/6.jpg);
+    background-image: url(../img/gallery/7.jpg);
     -webkit-animation-delay: 36s;
     -moz-animation-delay: 36s;
     -o-animation-delay: 36s;
@@ -1006,10 +910,10 @@ ul.menu li:hover ~ body {
 
 @-moz-keyframes imageAnimation {
     0% {opacity: 0;
-        -moz-animation-timing-function: ease-in;
+        -moz-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
     }
     8% {opacity: 1;
-        -moz-animation-timing-function: ease-out;
+        -moz-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
     }
     17% {opacity: 1;}
     25% {opacity: 0;}
@@ -1018,10 +922,10 @@ ul.menu li:hover ~ body {
 
 @-o-keyframes imageAnimation {
     0% {opacity: 0;
-        -o-animation-timing-function: ease-in;
+        -o-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
     }
     8% {opacity: 1;
-        -o-animation-timing-function: ease-out;
+        -o-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
     }
     17% {opacity: 1;}
     25% {opacity: 0;}
@@ -1043,12 +947,12 @@ ul.menu li:hover ~ body {
 @keyframes imageAnimation {
     0% {
         opacity: 0;
-        animation-timing-function: ease-in;
+        animation-timing-function: cubic-bezier(.42, 0, .58, 1);
 
     }
     8% {
         opacity: 1;
-        animation-timing-function: ease-out;
+        animation-timing-function: cubic-bezier(.42, 0, .58, 1);
     }
     17% {opacity: 1;}
     25% {opacity: 0;}
@@ -1210,26 +1114,135 @@ ul.menu li:hover ~ body {
 #houses_decorate{
     width: 588px;
     height: 500px;
-    left: 236px;
+    left: 256px;
     position: fixed;
 }
 #houses_houses{
     width: 480px;
     height: 430px;
-    left: 410px;
-    top: 45px;
+    left: 461px;
+    top: 58px;
     z-index: 1;
     position: fixed;
 }
 #bc_block{
      width: 100%;
-    height: 180px;
+    height: 277px;
     left: 0px;
     bottom: 0px;
     position: fixed;
+    z-index: 1;
 }
 #bc_block > img{
     left: 0px;
-    margin-left: -93px;
+    margin-left: -39px;
+  
 }
+@media screen and (max-width:1279px)
+{
+	body { background: rgb(230, 217, 200) }
+	p.resolution { display: block; }
+}
+.resolution{display: none;}
+
+#support-window {
+	z-index: 100;
+	border-color: #696869;
+	border-width: 1px;
+	border-style: solid;
+	position: fixed;
+	width: 500px;
+	height: 320px;
+	left: 100%;
+	top: 50%;
+	margin-top: -180px;
+	margin-left: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0 1px 12px #5b5b5b;
+	-webkit-box-shadow: 0 1px 12px #5b5b5b;
+	-moz-box-shadow: 0 1px 12px #5b5b5b;
+}
+#help-window-title {
+	line-height: 38px;
+	text-shadow: 0 1px #FFB40F;
+	color:#FFB40F;
+	font-size: 17px;
+	text-align:center;
+	font-family: "game_of_thrones", "Comic Sans MS", cursive, Helvetica, Verdana, Arial, sans-serif;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	border-radius: 10px;
+	position: absolute;
+	width: 486px;
+	height: 38px;
+	top: 0;
+	left: 0;
+	padding-left: 15px;
+	background:black;
+	opacity:0.8;
+}
+
+#main-help {
+	border-top-color: #959395;
+	border-top-width: 1px;
+	border-top-style: solid;
+	position: absolute;
+	width: 100%;
+	height: 280px;
+	top: 39px;
+	left: 0;
+	background:black;
+	opacity:0.8;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px
+}
+#main-help ul{
+	list-style:none;
+}
+#main-help li a{
+	font-size:25px;
+	font-family:agencyfb, "Comic Sans MS", cursive;
+	text-decoration:none;
+	color:white;
+}
+#help-label {
+	position: absolute;
+	width: 40px;
+	height: 155px;
+	left: -60px;
+	top: 80px;
+	background:url(../img/credits/label.png) no-repeat;
+	opacity:0.65;
+	color:white;
+	font-family:"Comic Sans MS", cursive;
+	font-size:15px;
+	font-weight:700;
+	margin-left:10px;
+	background-position: 10px 0;
+	cursor: pointer;
+}
+#help-label:hover {
+	background-position: 8px 0
+}
+#help-label:active {
+	background-position: -58px 0
+}
+#close-help {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	right: 7px;
+	top: 5px;
+	background:url(../img/cross.png) no-repeat;
+	background-position: 0 0;
+}
+
+
 

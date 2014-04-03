@@ -295,7 +295,7 @@ background-color: rgba(0,0,0,0.7);
 	list-style-type: none;
 }
 #sidebar li:hover{
-	background: rgba(0,0,0,0.3);
+	background: white;
 	cursor: pointer;
-	color: rgb(210,106,0);
+	color: white;
 }

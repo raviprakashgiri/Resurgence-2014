@@ -15,11 +15,7 @@ window.onhashchange = function(){
 	if(which[1]){
 		b = which[1];
 		if((!events.current||!events.currentEvent)||(events.current!=a||events.currentEvent!=b)){
-<<<<<<< HEAD
 			$("#events .img")[0].src='';
-=======
-			$("#events .img")[0].src=null;
->>>>>>> master
 			$("#events .abst").html('');
 			$("#events .title").html('');
 			console.log(211);
@@ -75,8 +71,8 @@ var events = {
 			"eventid" : "special"
 		},
 		{
-			"title" : "Lan Games",
-			"eventid" : "games"
+			"title" : "Inter",
+			"eventid" : "inter"
 		}
 	],
 	current: '',
@@ -96,7 +92,7 @@ var events = {
 		nimg.src = w.img;
 		nimg.onload = function(){
 			nimgload = true;
-			if(($("#events .img")[0].src == loadingimg)||($("#events .img")[0].src == 'http://resurgence2014.smvdu.ac.in/events.html'))
+			if(($("#events .img")[0].src == loadingimg)||($("#events .img")[0].src == '#'))
 				$("#events .img")[0].src = w.img;
 		};
 		if(w.img=='') {console.log('sa');nimg.onload();}
@@ -107,7 +103,7 @@ var events = {
 			$("#events .abst").html("");
 			if(w.hasOwnProperty('timing')&&w.timing)
 				$("#events .abst").append("Timings: "+w.timing+"<br>");
-			$("#events .abst").append("For timings on all events, refer the <a href='/data/Schedule_Resurgence14.pdf' download>Schedule</a><br><br>");
+			$("#events .abst").append("For timings on all events, refer the Schedule<br><br>");
 				$("#events .abst").append(w.abstract);
 			if(w.rules) $("#events .abst").append('<br><br><div style="font: 120% Carnevalee;color:rgb(236,220,136);">RULES</div>'+w.rules);
 			$("#events .abst").append(w.etc);
@@ -146,9 +142,9 @@ var events = {
 				$("#events")[0].style.background="rgba(15,0,0,0.85)";
 				jsonfile = 'https://dl.dropboxusercontent.com/u/83227438/theatre.json';
 				break;
-			case "games":
+			case "inter":
 				$("#events")[0].style.background="rgba(15,15,0,0.85)";
-				jsonfile = 'https://dl.dropboxusercontent.com/u/83227438/langames.json';
+				jsonfile = 'https://dl.dropboxusercontent.com/u/83227438/inter.json';
 				break;
 			case "arts":
 				$("#events")[0].style.background="rgba(15,15,0,0.85)";
