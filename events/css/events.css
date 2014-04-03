@@ -1,0 +1,92 @@
+#events{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:rgba(17,17,17,0.85);
+	overflow:hidden;
+}
+.sidebar{
+   -moz-background-size:100% 100%;
+     -o-background-size:100% 100%;
+-webkit-background-size:100% 100%;
+	background:url(../img/sidebarbg.png) repeat-y;
+        background-size:100% 100%;
+	float:left;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	width:20%;
+	z-index:1;
+}
+.sidebar ul{
+	margin-left:-25%;
+	margin-top:20px;
+	padding:0;
+}
+.sidebar li{
+	font:140% 'Mouse Memoirs';
+	list-style-type:none;
+	padding:10px;
+	text-align:center;
+}
+.sidebar li:hover{
+	color:#751E02;
+	cursor:pointer;
+}
+.evt-sel{
+	color:#751E02;
+}
+#abst_hyper {
+	text-decoration:none;
+	color:rgba(255,255,255,0.7);
+}
+.details a{
+	color: #EEE;
+	text-decoration:none;
+}
+.details a:hover{
+	text-decoration:underline;
+}
+.details{
+	color:white;
+	width:85%;
+	height:100%;
+	z-index:0;
+	overflow:auto;
+	margin-left:15%;
+	position:absolute;
+}
+.details_table td {
+	padding-left:50px;
+	font-family:Corbel;
+	color:white;
+}
+.details .abst{
+	margin-top:-3%;
+	color:white;
+	line-spacing:4px;
+	font:105% Helvetica;
+	padding:80px;
+	line-height:27px;
+}
+.details .imgdiv{
+	margin-top:0%;
+	width:100%;
+	max-height:500px;
+	overflow:hidden;
+}
+.details .img{width:100%; }
+.details .title {
+	font:250% Carnevalee;
+	text-align:center;
+	color:rgb(236, 220, 136);
+	padding-top:5x;
+}
+.subt-cult{
+	font-family:Carnevalee;
+	font-size:1.5em;
+	color:rgb(172,57,57);
+}
+.highl-cult{
+	color:#cc9900;
+}

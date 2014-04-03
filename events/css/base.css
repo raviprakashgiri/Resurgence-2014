@@ -1,0 +1,301 @@
+@import url(http://fonts.googleapis.com/css?family=Mouse+Memoirs);
+html,body{
+	padding: 0;
+	margin: 0;
+	background: #111;
+}
+@font-face{
+	font-family: Carnevalee;
+	src: url('../fonts/Carnevalee Freakshow.ttf')
+}
+@font-face{
+	font-family: Valera;
+	src: url('../fonts/VarelaRound-Regular.ttf')
+}
+@font-face{
+	font-family: NewsCycle;
+	src: url('../fonts/NewsCycle-Regular.ttf')
+}
+@font-face {
+    font-family: "game_of_thrones";
+    src: url(../fonts/game_of_thrones.ttf) format("truetype");
+}
+
+.abswrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.relwrap{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.fixwrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.clearfix{float: none;}
+.redbutton{
+	padding: 5px 20px;
+	border-radius: 4px;
+	background: rgba(150,10,10,0.7);
+}
+.redbutton:hover{
+	background: rgba(192,0,0,0.85);
+	cursor:pointer;
+}
+#jpreContent{
+	background: #111 no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+#preloader{
+	background: #DDD no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
+#jprePercentage{
+	color: #AAA;
+	left: 35%;
+	font: 500% 'Mouse Memoirs';
+}
+#loading{
+	position: relative;
+	top:70%;
+	font: 40px 'Mouse Memoirs';
+	color: #222;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 22px;
+}
+#navbar{z-index: 5;}
+#navbar ul{
+	font: 14px 'game_of_thrones';
+	font-weight: bold;
+	background: rgba(0,0,0,0.6);
+	padding: 5px;
+	margin: 0;
+	opacity: .85;
+	list-style-type: none;
+	background: -webkit-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: -o-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: -moz-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
+        rgba(0, 0, 0, 0.62));
+    background: linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), rgba(0, 
+        0, 0, 0.62));
+}
+#navbar ul li{
+-webkit-transition: all 0.3s ease-out; 
+   -moz-transition: all 0.3s ease-out; 
+     -o-transition: all 0.3s ease-out; 
+        transition: all 0.3s ease-out; 
+	padding: 2px 1.3%;
+	display: inline;
+	cursor: pointer;
+	color:rgba(255,255,0,0.8);	
+}
+a{
+text-decoration:inherit;
+color:inherit;
+}
+.active{
+background-color: rgba(0,0,0,0.7); 
+}
+
+#navbar ul li:not(.nav-right){color: #FFB40F;}
+#navbar ul li:not(.nav-right):hover{
+	background: black;
+}
+
+#main{
+	background: url(../img/loadingbg.jpg) #DDD no-repeat center center fixed; 
+}
+#content{
+	margin: 27px auto 0 auto;
+	width: 100%;
+}
+#confetti{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.homefoot{
+	z-index: 3;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:120px;
+}
+.homefoot .left{background:url(../img/left.png);}
+.homefoot .right{background:url(../img/right.png);}
+.homefoot .side{
+	font: 140% Carnevalee;
+	color: #ffe4c4;
+	text-align:center;
+	float:left;
+	width:16%;
+	background-size: 100%;
+	height:150px;
+	padding: 2%;
+}
+.homefoot .side a{color:white;}
+.homefoot .side a:hover{color:rgb(210,106,0);}
+.homefoot .middle{
+	float: left;
+	height: 100%;
+	width: 60%;
+}
+#hyper a:hover{color:rgb(210,106,0);}
+.homefoot .middiv{
+	font: 170% 'Mouse Memoirs';
+	color: #fff;
+	text-align: center;
+	width: 16%;
+	float: left;
+	margin: 2% 0 0 3%;
+	font-size:140%;
+	background: url(../img/bg1.png);
+	background-size: 100% 100%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+.homefoot .middiv a{color:rgb(221, 193, 144);}
+.homefoot .middiv a:hover{color:#DDD;}
+.homefoot .caption{
+	border-top: solid 1px black;
+	margin-left:5%;
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	top :70%;
+	text-align: center;
+	font: 160% 'Mouse Memoirs';
+	color: black;
+	padding-bottom: 8px;
+}
+#events{
+	width: 100%;
+	height: 95.3%;
+	background: rgba(17,17,17,0.85);
+}
+.topic{
+	cursor: pointer;
+	position : absolute;
+	width : 100px;
+	height : 80px;
+	margin-left:20px;
+}
+.topic img{height:100%;}
+.topic .topic-imgdiv{width:80px;margin:0 auto;}
+.topic-title{
+	margin-top: -15px;
+	margin-left: -40px;
+	width : 180px;
+	text-align : center;
+	font : 145% Carnevalee;
+	color : #555;
+}
+.topic-title:hover{
+	color : rgba(0,0,0,1);
+}
+.about{
+	text-align: center;
+	background-size: 100% 80%;
+	font: 140% 'Mouse Memoirs';
+	color: rgba(0,0,0,0.7);
+	margin-top: 6%;
+	padding: 30px 200px;
+	height:80%;
+}
+.tent{
+	position: fixed;
+	z-index: 2;
+	padding: 3% 1%;
+	text-align: center;
+	font: 150% Carnevalee;
+	height: 100%;
+}
+.tent-l{
+	top:6.5%;
+	left: 0;
+}
+.tent-r{
+	right: 0;
+}
+.tent a{
+	color:rgb(28, 28, 28);
+	text-decoration: none;
+}
+.tent a:hover{
+	color:rgb(82, 28, 28);
+}
+.tent>div{margin:22% 0;}
+#sidebar{
+	background: rgba(0,0,0,0.5);
+	width: 40px;
+	position: fixed;
+	top: 30%;
+	right:0;
+	height: 320px;
+	border-radius: 15px 0 0 15px;
+  -webkit-transition: all 0.3s ease-out; 
+     -moz-transition: all 0.3s ease-out; 
+       -o-transition: all 0.3s ease-out; 
+          transition: all 0.3s ease-out; 
+    z-index: 2;
+}
+#sidebaritems{
+	height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#sidebar:hover{
+	width: 300px;
+	box-shadow: rgba(0,0,0,0.7) 10px 0 10px -5px;
+}
+#sidebarmenu{
+	position: absolute;
+	top: 25%;
+	font: 120% Helvetica;
+	left: 12px;
+	width: 20px;
+	color: #CCC;
+	height: 100%;
+}
+#sidebar ul{
+	margin: 0;
+	padding-left: 30px;
+	width: 300px;
+}
+#sidebar li{
+	padding: 10px 25px 10px 10px;
+	font: 120% 'Mouse Memoirs';
+	color: #DDD;
+	list-style-type: none;
+}
+#sidebar li:hover{
+	background: rgba(0,0,0,0.3);
+	cursor: pointer;
+	color: rgb(210,106,0);
+}

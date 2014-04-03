@@ -27,11 +27,26 @@ body{
 	width:50px;
 	
 }
+#aman1{
+	position:fixed;
+	top:-50px;
+	left:55px;
+	width:50px;
+	
+}
+
 #aman img{
 	position: relative;
 	width:48px;
-	height:600px;
-	top:-300px;
+	height:500px;
+	top:-250px;
+	bottom:-200px;
+}
+#aman1 img{
+	position: relative;
+	width:48px;
+	height:500px;
+	top:-250px;
 	bottom:-200px;
 }
 

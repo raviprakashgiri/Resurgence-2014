@@ -21,7 +21,7 @@
 <meta name="description" content="Techfest 2013-14: IIT Bombay presents Asia's Largest Science and Technology Festival">
 <meta name="Keywords" content="tech, college fest, lecture, iit, bombay, technology, competitions, events, workshop, exhibition, science, fest, technical, powai, robowars, robotics, delhi, bits, australia, thailand, sri lanka, nexus, inexus, technoholix, robotics, techfest, ozone, mumbai" />
 <meta name="Author" content="Resurgence 2014" />
-
+<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
 	 <style type="text/css">
 			span.reference{
 				position:fixed;
@@ -67,7 +67,50 @@
 </head>
 
 <body>
-	<h1 style="color:#ffffff; text-shadow:0px 0px 1px #ffffff;"><a href="#" style="text-decoration: none; color: #0099c2;">Gallery</a></h1>
+	<nav id="navbar">
+                                <ul id="menu" class="menu">
+                                    <li>
+                                        <a href="../index_home.html" id="home">
+                                         <span class="active"></span>  <span class="wrap"> <span class="link">Home</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../about/about.html" id="about" data-reveal-id="aboutpopup">
+                                         <span class="active"></span>  <span class="wrap"> <span class="link">About us</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../events/events.html" pid="events">
+                                             <span class="active"></span>  <span class="wrap"> <span class="link">Events</span><span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sponsor/sponsor.html" id="sponsors">
+                                            <span class="active"></span>  <span class="wrap"> <span class="link">Sponsors</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="pronites">
+                                            <span class="active"></span>  <span class="wrap"> <span class="link">Pronites</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html" id="archives">
+                                             <span class="active"></span>  <span class="wrap"> <span class="link">Gallery</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../contact/contact.html" id="contact">
+                                             <span class="active"></span>  <span class="wrap"> <span class="link">Contact Us</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../schedule/schedule.html" id="Schedule">
+                                            <span class="active"></span>  <span class="wrap"> <span class="link">Schedule</span>  <span class="descr"></span> </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
 	 
 
 						<div id="im_wrapper" class="im_wrapper">
@@ -106,13 +149,9 @@
 		<div id="im_next" class="im_next"></div>
 		<div id="im_prev" class="im_prev"></div>
         
-        <div>
-            <span class="reference">
-                <a href="#"><img src="http://www.techfest.org/Img/home.png" width="60px" height="60px" /></a>
-            </span>
-		</div>
-
-		<div id="aman" style="float:right; top:50% ;color:red;"><img src=image/12.jpg /></div>
+        
+		<div id="aman" style="float:right; top:50% ;color:red;"><img src=image/sword.png style="width:150%"/></div>
+        <div id="aman1" style="float:left;top:50%;color:red;"><img src="image/sword.png" style="width:150%"/></div>
 
 		 <!-- The JavaScript -->
         <script src="Js/jq1.js"></script>
@@ -205,6 +244,7 @@
 				//disperses the thumbs in a grid based on windows dimentions
 				function disperse(){
 					$("#aman").animate({right:"55px"},700);
+					$("#aman1").animate({left:"55px"},700);
 					
 					if(!flg_click) return;
 					setflag();
@@ -357,6 +397,7 @@
 						});
 
  $("#aman").animate({right:"240px"},1500);
+ $("#aman1").animate({left:"240px"},1500);
 
 					}
 					else{

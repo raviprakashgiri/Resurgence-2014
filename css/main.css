@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "agencyfb";
+    src: url(../fonts/01182_AgencyFB.ttf) format("truetype");
+}
+
+
 slidehtml, body {
     height: 100%;
     padding: 0;
@@ -21,48 +27,29 @@ slidehtml, body {
 
 /*css for rotator */
 
-ananta{
+#ananta > a{
     animation-duration: 12s;
     animation-iteration-count:infinite;
-    color: #FFB40F;
-
+    background-color: slategray;
     font-weight: bold;
 }
-.vid{
-    overflow:hidden;
-    min-height: 643px;
-    min-width:100%;
-    height:643px;
-    margin-left:0px;
-    top:0px;
-    bottom:768px;
-    
-}
-video{
-    image-fit: fill;
-}
 
-ananta:hover {
-    background-color: #FFB40F
-    ;
-}
-
-.download{
-    background-color:#FFB40F;
-}
-
-ananta.download {
+#ananta > a:hover {
+   /* background-color: slategray;*/
+   background-color: firebrick;
+ }
+#ananta > a.download {
     position: absolute;
     top: 3em;
     left: 0.5em;
     width: 7em;
     height: 7em;
     padding: 1.2em 0;
-    background-image: linear-gradient(rgba(145, 106, 106, 0), rgba(0,0,0,.3));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.3));
   /*  background-color: red;*/
     color: white;
     line-height: 1;
-    font-size: 120%;
+    font-size: 110%;;
     font-weight: normal;
     text-align: center;
     text-decoration: none;
@@ -75,12 +62,12 @@ ananta.download {
     -webkit-animation: 3s colorcycle infinite alternate;
 }
 
-ananta.download:hover {
+#ananta > a.download:hover {
     -webkit-transform: rotate(375deg);
     -webkit-transition: 1s transform;
 }
 
-    ananta.download > strong {
+    #ananta > a.download > strong {
         display: block;
         margin: .1em 0;
         font-size: 180%;
@@ -89,7 +76,7 @@ ananta.download:hover {
     
     
     
-    ananta.download:hover:after {
+    #ananta > a.download:hover:after {
         display: none;
     }
 
@@ -271,48 +258,7 @@ ul.menu {
     top: 0%;
     left: 0%
 }
-/*
-#register{
-    position: absolute;
-    left:-3.8em;
-    top: 40%;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    z-index:10;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-top-left-radius: 10px;
-    -moz-border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-decoration: none;
-    -webkit-transition:all .25s linear;
-    -moz-transition:all .25s linear;
-    -o-transition:all .25s linear;
-    -ms-transition:all .25s linear;
-    transition:all .25s linear;
-}
-#register:hover {
-    left:-3.5em;
-    box-shadow: 0 0 4px #aaa;
-}
-#register div {
-    padding: 8px 15px;
-    background: rgba(0, 0, 0, 0.5);
-    color:white;
-    font-family: "agencyfb";
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-top-left-radius: 10px;
-    -moz-border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 1.5em;
-}
-*/
+
 ul.menu a {
     text-decoration: none;
     outline: none;
@@ -321,7 +267,7 @@ ul.menu a {
 ul.menu li {
     float: left;
     width: 12.5%;
-    height: 55px;
+    height: 33px;
     position: relative;
     cursor: pointer;
 }
@@ -331,7 +277,7 @@ ul.menu li > a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 55px;
+    height: 33px;
     z-index: 20;
     background-color: #FFB40F;
     background: -webkit-linear-gradient(rgba(255, 150, 15, 0.5), rgba(0, 0, 0, 0.56), 
@@ -360,7 +306,7 @@ ul.menu li a img {
 
 ul.menu li span.wrap {
     position: absolute;
-    top: -70px;
+    top: 10px;
     left: 0px;
     width: 100%;
     height: 60px;
@@ -376,7 +322,7 @@ ul.menu li span.active {
     z-index: 14;
     /*TODO*/
 
-    background-color: #FFB40F;
+    background-color: rgba(0,0,0,0.6);
 
     -moz-box-shadow: 0px 0px 4px #000 inset;
     -webkit-box-shadow: 0px 0px 4px #000 inset;
@@ -418,7 +364,7 @@ ul.menu li span span.descr {
 }
 
 
-/* anwesha banner*/
+/*banner*/
 
 #banner {
     position:absolute;
@@ -456,7 +402,7 @@ ul.menu li span span.descr {
     width: 150px;
     height: 36px;
     color:#FFB40F;
-    border-radius: 20px 20px 0 0;
+    /*border-radius: 20px 20px 0 0;*/
 }
 #share div {
     float:left;
@@ -466,34 +412,40 @@ ul.menu li span span.descr {
 }
 
 #yt{
-    background:url("../img/shareicons/ythover.svg") white;
+    background:url("../img/shareicons/y1.png") #CFB538;
     background-size: contain;
-    border-radius:50%;
+   /* border-radius:50%;*/
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 #yt:hover{
-    background:url("../img/shareicons/yt.svg") white;
+    background:url("../img/shareicons/y2.png") #CFB538;
     background-size: contain;
     border-radius:50%;
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb{
-    background:url("../img/shareicons/fbhover.svg") white;
+    background:url("../img/shareicons/fb1.png") #CFB538;
     background-size: contain;
-    border-radius:50%;
+   /* border-radius:50%;*/
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 #fb:hover{
-    background:url("../img/shareicons/fb.svg") white;
+    background:url("../img/shareicons/fb2.png") #CFB538;
     background-size: contain;
     border-radius:50%;
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp{
-    background:url("../img/shareicons/gphover.svg") white;
+    background:url("../img/shareicons/g2.png") #CFB538;
     background-size: contain;
-    border-radius:50%;
+   /* border-radius:50%;*/
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 #gp:hover{
-    background:url("../img/shareicons/gp.svg") white;
+    background:url("../img/shareicons/g1.png") #CFB538;
     background-size: contain;
     border-radius:50%;
+    border: rgba(0,0,0,0.6) solid 2px;
 }
 
 /*#spon_roll{
@@ -509,13 +461,13 @@ ul.menu li span span.descr {
 */
 
 /* popup */
-#popupAbout, #popupContact, #popupArchives, #popupEvents {
+#popupAbout, #popupContact, #popupEvents {
     height: 450px;
     width: 900px;
     overflow: auto;
     background-color: #FFB40F;
     border: 1px solid #cecece;
-    z-index: 15;
+    z-index: 10005;
     padding: 20px;
     color: #FFB40F;
     -webkit-box-shadow: 0px 0px 4px #000 inset;
@@ -530,6 +482,28 @@ ul.menu li span span.descr {
     margin-top: 15px;
     visibility: hidden;
 }
+
+ #popupArchives{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #F0DAED;
+  /*  border: 1px solid #cecece;*/
+    z-index: 10005;
+   /* padding: 20px;*/
+    color: #FFB40F;
+  /*  -webkit-box-shadow: 0px 0px 4px #000 inset;
+    -moz-box-shadow: 0px 0px 4px #000 inset;
+    box-shadow: 0px 0px 4px #000 inset;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    visibility: hidden;*/
+ }
 
 #popupCS {
     height: 150px;
@@ -554,18 +528,18 @@ ul.menu li span span.descr {
 }
 
 
-#popupAbout p, #popupContact p, #popupArchives p, #popupEvents p, #popupCS p {
+#popupAbout p, #popupContact p,#popupEvents p, #popupCS p {
     padding-left: 10px;
     font-size: 16px;
     line-height: 24px;
 }
 
-#popupAbout p font, #popupContact span, #popupArchives p font, #popupEvents p 
+#popupAbout p font, #popupContact span,font, #popupEvents p 
 font, #popupCS p font {
     color:#FFB40F;
 }
 
-#popupAbout h1, #popupContact h1, #popupArchives h1, #popupEvents h1, #popupCS 
+#popupAbout h1, #popupContact h1,#popupEvents h1, #popupCS 
 h1 {
     text-align: left;
     font-family:game_of_thrones;
@@ -575,12 +549,28 @@ h1 {
     padding-bottom: 2px;
     margin: 0;
 }
-#popupAboutClose, #popupContactClose, #popupArchivesClose, #popupEventsClose, 
+#popupAboutClose, #popupContactClose, #popupEventsClose, 
 #popupCSClose {
     right: 0;
     top: 15px;
     position: absolute;
     display: block;
+    opacity: 0.5;
+    -webkit-transition:all .25s linear;
+    -moz-transition:all .25s linear;
+    -o-transition:all .25s linear;
+    -ms-transition:all .25s linear;
+    transition:all .25s linear;
+}
+
+#popupArchivesClose{
+    bottom: 62px;
+    left: 672px;
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 25px;
+    border: 1px solid black;
     opacity: 0.5;
     -webkit-transition:all .25s linear;
     -moz-transition:all .25s linear;
@@ -649,7 +639,7 @@ h1 {
 
 .cb-slideshow,
 .cb-slideshow:after {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
@@ -807,7 +797,7 @@ ul.menu li:hover ~ body {
     width: 100%;
     text-align: right;
     opacity: 0;
-    color: #fff;
+    color: #FFB40F;
     -webkit-animation: titleAnimation 48s linear infinite 0s;
     -moz-animation: titleAnimation 48s linear infinite 0s;
     -o-animation: titleAnimation 48s linear infinite 0s;
@@ -817,10 +807,10 @@ ul.menu li:hover ~ body {
 
 .cb-slideshow li div h3 {
     font-family: "game_of_thrones";
-    font-size: 30px;
+    font-size: 20px;
     padding: 0;
     padding-right: 30px;
-    line-height: 768-px;
+    line-height: 900px;
     text-shadow:#000 2px 2px 2px;
 }
 
@@ -835,7 +825,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(2) span {
-    /*background-image: url(../img/gallery/2.jpg);*/
+    background-image: url(../img/gallery/3.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -898,7 +888,7 @@ ul.menu li:hover ~ body {
 }
 
 .cb-slideshow li:nth-child(1) div {
-
+   
 }
 
 .cb-slideshow li:nth-child(2) div {
@@ -1142,7 +1132,7 @@ ul.menu li:hover ~ body {
     border: rgba(100,100,100,0.3) solid 2px;
     border-radius: 35px 0 35px 0;
     bottom:0px;
-    width: 328px;
+    width: 342px;
     height: 120px;
     color:white;
     background-color: rgba(0,0,0,0.6);
@@ -1163,9 +1153,42 @@ ul.menu li:hover ~ body {
    margin: -0.33em 0;
     text-align: left;
     font-family:game_of_thrones;
-    font-size: 30px;
+    font-size: 17px;
+    color: #FFB40F;
+    font-weight: 10px;
     letter-spacing: 1px;
     border-bottom: 1px dotted #D3D3D3;
     padding-bottom: -2px;
     margin: 0;
 }
+#houses_main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+#houses_decorate{
+    width: 588px;
+    height: 500px;
+    left: 236px;
+    position: fixed;
+}
+#houses_houses{
+    width: 480px;
+    height: 430px;
+    left: 410px;
+    top: 45px;
+    z-index: 1;
+    position: fixed;
+}
+#bc_block{
+     width: 100%;
+    height: 180px;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+}
+#bc_block > img{
+    left: 0px;
+    margin-left: -93px;
+}
+
