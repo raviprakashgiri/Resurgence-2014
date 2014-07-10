@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Wellfleet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wellfleet'), local('Wellfleet-Regular'), url(http://themes.googleusercontent.com/static/fonts/wellfleet/v2/qu15OBOh_Q0T8ooRUaKSDT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 55px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+   font-family:"Arvo";
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+	padding: 0;
+}
+
+h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+
+
+
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+a.lpanel:hover{ color: #fff; }
+a.rpanel:hover{ color: #fff; }
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+
+#header { 
+	width: 100%; 
+	background: url('header-bg.png'); 
+	height: 670px; 	
+	background:rgba(0,0,0,0.5);
+}
+
+#nav { width: 500px; float: right; margin-top: 20px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 21px;
+}
+
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1;  }
+
+
+
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes {   
+ font-family: 'Goudy Bookletter 1911', serif;
+   font-weight: normal;
+   font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+   
+ .author_name_white { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }  
+ .author_name_gray { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }  
+ .quotes_container { width: 800px; margin: 0 auto; }
+#christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
+#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto;  display: block; position: relative; top: -38px; }
+#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -54px; left: -102px; }
+#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -33px;  right: -100px; }
+
+
+
+/*= BUTTONS
+--------------------------------------------------------*/
+
+button.btn-know { 
+	padding: 15px 47px; 
+	margin: 40px 38.8%;
+	text-align: center;
+	border: 4px solid #fff; 
+	color: #fff; 
+	background: transparent; 
+	font-size: 19px;
+	cursor: pointer;
+	text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn-know:hover { background: #fff; color: transparent; }
+ul.built { list-style: none; margin: 0 auto; width: 730px; }
+.built li img{ float: left; padding-right: 34px; }
+
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+#slide1, #slide2{ width: 100%; }
+
+
+#slide2{
+	color: #333333;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0px 0;
+}
+
+#name
+{
+	height:600px;
+	background:rgba(0,0,0,0.5);
+	margin: 0 auto;
+		overflow: hidden;
+	padding: 0px 0;
+}
+
+#slide3{
+	color: #000;
+	height: 600px;
+	padding: 80px 0 0 0;	
+	background-size: cover;
+}
+
+
+#video_pattern {
+background-image: url(pattern.png);
+position: fixed;
+opacity: 0.8;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 1;
+background:rgba(0,0,0,0.5);
+}
+
+#video_background { background:rgba(0,0,0,0.5);position: absolute; bottom: 0px; right: 0px; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1000; overflow: hidden; }
+
+.anima{
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 2px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	width: 30em;
+	margin: 0 0 0 -20em;
+}
+
+p span {
+
+	font: 700 4em/1 "Oswald", sans-serif;
+	letter-spacing: 0;
+	padding: .25em 0 .325em;
+	display: block;
+	margin: 0 auto;
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+	-webkit-background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+h1 {
+  font: normal 3em /1.1 'Fjalla One', Arial, sans-serif;
+  color: #5f5e61;
+  text-transform: uppercase;
+  border: .125em solid #5f5e61;
+  display: inline-block;
+  border-radius: .2em;
+  padding: .075em .075em 0;
+  margin-left:40%;
+  margin-top: 20px;
+
+  -webkit-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+  -webkit-transform: rotate(-3deg);
+
+  -moz-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+  -moz-transform: rotate(-3deg);
+
+  -o-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+  -o-transform: rotate(-3deg);
+
+  mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+  transform: rotate(-3deg);
+}
